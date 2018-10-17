@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:padding="8.0dip" >
+  
+   <ImageView
+      android:id="@+id/iv_icon1"
+      android:layout_width="10dp"
+      android:layout_height="20dp"
+      android:contentDescription="@null"
+      android:src="@drawable/pedding_index04"
+      android:visibility="visible"/>
+   
+  <RelativeLayout
+	    android:id="@+id/rl_unfinish"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@id/iv_icon1" 
+	    android:paddingRight="30dp">
+	    <TextView
+	        android:id="@+id/tv_title"
+	        style="@style/list_text_info"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginBottom="2dp"
+	        android:text="标题"
+	        android:textSize="14sp"
+	        android:textColor="#717071" />
+	  
+	     <TextView
+	        android:id="@+id/tv_unfinishDate"
+	        style="@style/list_text_info"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:layout_centerVertical="true"
+	        android:layout_below="@+id/tv_title"
+	        android:text="日期"
+	        android:textSize="14sp"
+	        android:textColor="#717071"/>
+	</RelativeLayout>
+	
+  	<ImageView
+        android:id="@+id/iv_icon2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/pedding_icon1"
+        android:layout_centerVertical="true"
+        android:contentDescription="@null" /> 
+        
+    <TextView
+        android:id="@+id/tv_formid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_centerVertical="true"
+        android:text=""
+        android:textSize="12sp"
+        android:drawablePadding="2.0dp"
+        android:visibility="gone"/>
+    
+     <TextView
+        android:id="@+id/tv_taskid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_centerVertical="true"
+        android:text=""
+        android:textSize="12sp"
+        android:drawablePadding="2.0dp"
+        android:visibility="gone"/>
+    
+</RelativeLayout>

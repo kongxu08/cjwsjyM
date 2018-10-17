@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="#eaf4f8"
+    android:orientation="horizontal" >
+    
+   
+     <LinearLayout 
+       android:layout_width="0dp"
+       android:layout_weight="3"
+       android:layout_height="fill_parent"
+       android:orientation="vertical"
+       android:layout_marginLeft="15dp"
+       android:gravity="center_vertical"
+       >
+         <LinearLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="10dp"
+         android:gravity="center_vertical"
+        >
+            <TextView 
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                    style="@style/gray16"
+                    android:text="车牌号: "
+                  />
+             <TextView 
+                 android:id="@+id/vehile_no"
+                  android:layout_width="0dp"
+                 android:layout_weight="0.55"
+                 android:layout_height="wrap_content"
+                 style="@style/black16"
+                 />
+            
+                <TextView 
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                    style="@style/gray16"
+                    android:text="车辆类型: "
+                  />
+              <TextView 
+                  android:id="@+id/vehile_type"
+                  android:layout_width="0dp"
+                 android:layout_weight="0.4"
+                 android:layout_height="wrap_content"
+                 style="@style/black16"
+                 android:maxEms="8" 
+                android:singleLine="true"
+                android:ellipsize="end" 
+                 android:layout_marginRight="10dp"
+                 />
+         </LinearLayout> 
+         
+             
+           <LinearLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:gravity="center_vertical"
+        >
+                 <TextView 
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                    style="@style/gray16"
+                    android:text="品    牌: "
+                  />
+              <TextView 
+                  android:id="@+id/vehile_name"
+                 android:layout_width="0dp"
+                 android:layout_weight="0.5"
+                 android:layout_height="wrap_content"
+                  style="@style/black16"
+                 />
+                <TextView 
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                   style="@style/gray16"
+                   android:text="载  客  数:"
+                  />
+               <TextView 
+                   android:id="@+id/vehile_count"
+                android:layout_width="0dp"
+                 android:layout_weight="0.4"
+                 android:layout_height="wrap_content"
+                 style="@style/black16"
+                  android:layout_marginLeft="5dp"
+                 />
+           </LinearLayout>
+           
+           
+     </LinearLayout>
+     
+     
+         
+   
+</LinearLayout>

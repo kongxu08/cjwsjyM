@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="D:\Project_AS\cjwsjyM\libs\fastjson-1.1.27-android.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="27.0.0"
+        sha1="24ee7ff19cce098b34c33c4e5806fd12d0c2bf23">
+        <dex dex="D:\Project_AS\cjwsjyM\build\intermediates\transforms\preDex\release\7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Project_AS\cjwsjyM\library\build\intermediates\intermediate-jars\release\classes.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="27.0.0"
+        sha1="50ba0abeafcfde7cdb581693e6f5dbbf3f14959c">
+        <dex dex="D:\Project_AS\cjwsjyM\build\intermediates\transforms\preDex\release\34.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Project_AS\cjwsjyM\libs\cmcc-app-base-1.0.7.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="27.0.0"
+        sha1="b8bac7de77e72d26062624b4cb4a5a1b338e4899">
+        <dex dex="D:\Project_AS\cjwsjyM\build\intermediates\transforms\preDex\release\3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\chenyu\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-24.2.1.aar\f8f99b1088bad863923980625a6ab84a\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="27.0.0"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="D:\Project_AS\cjwsjyM\build\intermediates\transforms\preDex\release\30.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Project_AS\cjwsjyM\libs\dqdp-common-jdk1.5-2.09.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="27.0.0"
+        sha1="48765c22bd7dcb7039009a97e303566bf15b365d">
+        <dex dex="D:\Project_AS\cjwsjyM\build\intermediates\transforms\preDex\release\6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\chenyu\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-24.2.1.aar\31828493b218c7e4f3aa820c51f5cb5d\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="27.0.0"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="D:\Project_AS\cjwsjyM\build\intermediates\transforms\preDex\release\29.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Project_AS\cjwsjyM\PushSDK\libs\alicloud-android-sdk-httpdns-1.0.7.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="27.0.0"
+        sha1="93e53791e05a4a2c2d4d8e9b57f3387b8882faee">
+        <dex dex="D:\Project_AS\cjwsjyM\build\intermediates\transforms\preDex\release\15.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="27.0.0"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="D:\Project_AS\cjwsjyM\build\intermediates\transforms\preDex\release\33.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Project_AS\cjwsjyM\PushSDK\libs\utdid4all-1.1.5.3_proguard.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="27.0.0"
+        sha1="989c3bb13060da1e3154bfe00236f76453a2725f">
+        <dex dex="D:\Project_AS\cjwsjyM\build\intermediates\transforms\preDex\release\17.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Project_AS\cjwsjyM\libs\qysdk.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="27.0.0"
+        sha1="a36d478f0eb794fee0fca99039ba133629818d08">
+        <dex dex="D:\Project_AS\cjwsjyM\build\intermediates\transforms\preDex\release\13.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\chenyu\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-24.2.1.aar\6f4cff5191cc2f9e2012adf05e0fd08e\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="27.0.0"
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="D:\Project_AS\cjwsjyM\build\intermediates\transforms\preDex\release\20.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\chenyu\.gradle\caches\transforms-1\files-1.1\support-core-utils-24.2.1.aar\64d7ad78afab4dfd1152e76233f19642\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="27.0.0"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="D:\Project_AS\cjwsjyM\build\intermediates\transforms\preDex\release\26.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\chenyu\.gradle\caches\transforms-1\files-1.1\support-media-compat-24.2.1.aar\17a0159e43085dcf1ac1d02ed0889c10\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="27.0.0"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="D:\Project_AS\cjwsjyM\build\intermediates\transforms\preDex\release\24.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\chenyu\.gradle\caches\transforms-1\files-1.1\support-compat-24.2.1.aar\b05d01be263d0d1f05820088775ca022\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="27.0.0"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="D:\Project_AS\cjwsjyM\build\intermediates\transforms\preDex\release\31.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Project_AS\cjwsjyM\libs\dqdp-android.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="27.0.0"
+        sha1="44f6ed67d64194269ab7fd3b3dfaf8a05096e88d">
+        <dex dex="D:\Project_AS\cjwsjyM\build\intermediates\transforms\preDex\release\5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Project_AS\cjwsjyM\libs\nineoldandroids-2.4.0.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="27.0.0"
+        sha1="a43cf9e271b5bc564e880a0a4be63ab9c69c97f8">
+        <dex dex="D:\Project_AS\cjwsjyM\build\intermediates\transforms\preDex\release\10.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Project_AS\cjwsjyM\libs\gson-2.2.4.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="27.0.0"
+        sha1="973e832af433b44c3ed11c426f2f390b29f3f3f8">
+        <dex dex="D:\Project_AS\cjwsjyM\build\intermediates\transforms\preDex\release\8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Project_AS\cjwsjyM\libs\pinyin4j-2.5.0.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="27.0.0"
+        sha1="ae353005f973da1cd8545b54354504c2503f6865">
+        <dex dex="D:\Project_AS\cjwsjyM\build\intermediates\transforms\preDex\release\11.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\chenyu\.gradle\caches\transforms-1\files-1.1\support-compat-24.2.1.aar\b05d01be263d0d1f05820088775ca022\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="27.0.0"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="D:\Project_AS\cjwsjyM\build\intermediates\transforms\preDex\release\32.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\chenyu\.gradle\caches\transforms-1\files-1.1\appcompat-v7-24.2.1.aar\a11ee6e683242f6843f40a8014251266\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="27.0.0"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="D:\Project_AS\cjwsjyM\build\intermediates\transforms\preDex\release\18.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\chenyu\.gradle\caches\transforms-1\files-1.1\support-core-ui-24.2.1.aar\3e5393d6e6da8f5a4583ca910a9728da\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="27.0.0"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="D:\Project_AS\cjwsjyM\build\intermediates\transforms\preDex\release\27.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\chenyu\.gradle\caches\transforms-1\files-1.1\support-core-ui-24.2.1.aar\3e5393d6e6da8f5a4583ca910a9728da\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="27.0.0"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="D:\Project_AS\cjwsjyM\build\intermediates\transforms\preDex\release\28.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\chenyu\.gradle\caches\transforms-1\files-1.1\support-core-utils-24.2.1.aar\64d7ad78afab4dfd1152e76233f19642\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="27.0.0"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="D:\Project_AS\cjwsjyM\build\intermediates\transforms\preDex\release\25.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\chenyu\.gradle\caches\transforms-1\files-1.1\support-fragment-24.2.1.aar\6c680e31f08916c6872fe08620a8aec9\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="27.0.0"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="D:\Project_AS\cjwsjyM\build\intermediates\transforms\preDex\release\21.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Project_AS\cjwsjyM\libs\AMap3DMap_4.1.3_AMapNavi_1.9.4_AMapSearch_4.0.0_AMapLocation_3.3.0_20170118.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="27.0.0"
+        sha1="dd5ae6e341f1b29b8db5e3d81c65381271061663">
+        <dex dex="D:\Project_AS\cjwsjyM\build\intermediates\transforms\preDex\release\1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Project_AS\cjwsjyM\PushSDK\build\intermediates\intermediate-jars\release\classes.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="27.0.0"
+        sha1="a908a9ecf77c0bb9ef606b0aa7a0c0dc0612eb02">
+        <dex dex="D:\Project_AS\cjwsjyM\build\intermediates\transforms\preDex\release\35.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Project_AS\cjwsjyM\libs\json-lib-2.2.3-jdk15.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="27.0.0"
+        sha1="e9c10548f3d5b260d604818057060cd0ab3b733c">
+        <dex dex="D:\Project_AS\cjwsjyM\build\intermediates\transforms\preDex\release\9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\chenyu\.gradle\caches\transforms-1\files-1.1\support-v4-24.2.1.aar\a8d9e4cb0987b587c366574e390aca22\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="27.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\Project_AS\cjwsjyM\build\intermediates\transforms\preDex\release\19.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Project_AS\cjwsjyM\libs\core-3.2.1.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="27.0.0"
+        sha1="2287494d4f5f9f3a9a2bb6980e3f32053721b315">
+        <dex dex="D:\Project_AS\cjwsjyM\build\intermediates\transforms\preDex\release\4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\chenyu\.gradle\caches\transforms-1\files-1.1\design-24.2.1.aar\d73e949c801b248ddc14a4c88311dc43\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="27.0.0"
+        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
+        <dex dex="D:\Project_AS\cjwsjyM\build\intermediates\transforms\preDex\release\14.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Project_AS\cjwsjyM\libs\android-query-full.0.25.10.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="27.0.0"
+        sha1="646ad6432a4da6a827e74ce64149c719ce7e86eb">
+        <dex dex="D:\Project_AS\cjwsjyM\build\intermediates\transforms\preDex\release\2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\chenyu\.gradle\caches\transforms-1\files-1.1\support-fragment-24.2.1.aar\6c680e31f08916c6872fe08620a8aec9\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="27.0.0"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="D:\Project_AS\cjwsjyM\build\intermediates\transforms\preDex\release\22.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\chenyu\.gradle\caches\transforms-1\files-1.1\support-media-compat-24.2.1.aar\17a0159e43085dcf1ac1d02ed0889c10\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="27.0.0"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="D:\Project_AS\cjwsjyM\build\intermediates\transforms\preDex\release\23.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Project_AS\cjwsjyM\libs\pushservice-4.0.0.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="27.0.0"
+        sha1="eda17a867b9f90170a79013ce8b3bc969444e502">
+        <dex dex="D:\Project_AS\cjwsjyM\build\intermediates\transforms\preDex\release\12.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Project_AS\cjwsjyM\PushSDK\libs\com.umeng.message_3.1.2a.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="27.0.0"
+        sha1="ddf12c1e982bcd694761dbb4398b6e2c45f23b24">
+        <dex dex="D:\Project_AS\cjwsjyM\build\intermediates\transforms\preDex\release\16.jar" />
+    </item>
+
+</items>

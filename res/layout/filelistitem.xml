@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#EFEFEF">
+
+	    <TextView
+	        android:id="@+id/fileSize"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="10dp"
+	        android:layout_marginLeft="10dp"   
+	        android:text=""
+	        android:textSize="14sp"
+	        android:textColor="#84D05F"
+	        android:layout_marginBottom="5dp" />
+	    
+	    <TextView
+	        android:id="@+id/fileName"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toLeftOf="@+id/fileSize" 
+	        android:layout_alignParentLeft="true"
+	        android:text=""
+	        android:textSize="14sp"
+	        android:textColor="#84D05F"
+	         android:layout_marginLeft="5dp"  
+	        android:layout_marginRight="15dp"
+	        android:layout_marginBottom="5dp" />
+	    
+	    <TextView
+	        android:id="@+id/fileUrl"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"   
+	        android:text=""
+	        android:textSize="14sp"
+	        android:layout_marginBottom="5dp"
+	        android:visibility="gone" />
+	    
+	    <TextView
+	        android:id="@+id/fileSize1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"   
+	        android:text=""
+	        android:textSize="14sp"
+	        android:layout_marginBottom="5dp"
+	        android:visibility="gone" />
+  
+</RelativeLayout>

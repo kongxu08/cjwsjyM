@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <LinearLayout 
+          android:id="@+id/ll_btn"
+          android:layout_width="fill_parent"
+          android:layout_height="40dp"
+          android:layout_marginTop="12dp"
+          android:layout_marginRight="12dp"
+           android:layout_marginLeft="12dp"
+          >
+          <ImageView 
+              android:id="@+id/img_address"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              />
+          <Button 
+              android:id="@+id/btn_address"
+              android:layout_width="140dp"
+               android:typeface="sans"
+               android:textSize="16sp"
+              android:layout_height="fill_parent"
+               android:textColor="@color/selector_item_offer"
+               android:background="@drawable/selector_terminal_param"
+              android:text="湖北省水利厅"
+              />
+         
+      </LinearLayout>
+
+</LinearLayout>

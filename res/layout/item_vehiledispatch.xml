@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="#eaf4f8"
+    android:orientation="horizontal" >
+    
+   <LinearLayout 
+       android:id="@+id/car_color"
+       android:layout_width="0dp"
+       android:layout_weight="1.4"
+       android:layout_height="fill_parent"
+       android:orientation="vertical"
+      
+       >
+       <TextView 
+           android:id="@+id/dis_no"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           style="@style/white18"
+           android:text="2014056345"
+           android:layout_gravity="center_horizontal"
+           android:layout_marginTop="10dp"
+           android:maxEms="8" 
+           android:singleLine="true"
+           android:ellipsize="end" 
+           />
+        <TextView 
+            android:id="@+id/dis_date"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           style="@style/white14"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="14dp"
+            android:text="yueye"
+           />
+   </LinearLayout>
+   
+     <LinearLayout 
+       android:layout_width="0dp"
+       android:layout_weight="3"
+       android:layout_height="fill_parent"
+       android:orientation="vertical"
+       android:layout_marginLeft="6dp"
+       android:gravity="center_vertical"
+       >
+         <LinearLayout 
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="12dp"
+         android:gravity="center_vertical"
+        >
+             <TextView 
+                 android:id="@+id/dis_department"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                  style="@style/gray14"
+                 android:maxEms="5" 
+                android:singleLine="true"
+                android:ellipsize="end" 
+                 android:text="综合部"
+                 />
+             <TextView 
+                 android:id="@+id/dis_name"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                   style="@style/gray14"
+                   android:layout_marginLeft="10dp"
+                 android:text="李静"
+                 />
+             <TextView 
+                 android:id="@+id/dis_phone"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 style="@style/black14"
+                  android:layout_marginLeft="10dp"
+                 android:text="13947548334"
+                 />
+                 />
+         </LinearLayout> 
+         
+             <ImageView 
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:src="@drawable/icon_jiantou"
+                  android:layout_gravity="right|center_vertical"
+                  android:layout_marginRight="10dp"
+                  />
+             
+           <LinearLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:gravity="center_vertical"
+       android:layout_marginBottom="5dp"
+        >
+              <TextView 
+                  android:id="@+id/dis_1"
+                 android:layout_width="0dp"
+                 android:layout_weight="0.5"
+                 android:layout_height="wrap_content"
+                   style="@style/black16"
+                 android:text="大院门口"
+                 android:maxEms="5" 
+                android:singleLine="true"
+                android:ellipsize="end" 
+                 />
+               <TextView 
+                   android:id="@+id/dis_2"
+                android:layout_width="0dp"
+                 android:layout_weight="0.6"
+                 android:layout_height="wrap_content"
+                 style="@style/black16"
+                 android:text="中远国际大酒店"
+                  android:layout_marginLeft="5dp"
+                  android:layout_marginRight="8dp"
+                  android:maxEms="5" 
+                android:singleLine="true"
+                android:ellipsize="end" 
+                 />
+           </LinearLayout>
+           
+           
+     </LinearLayout>
+     
+     
+         
+   
+</LinearLayout>

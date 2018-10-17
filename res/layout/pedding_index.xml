@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/pedding_index02">
+   
+  <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="vertical"> 
+   	
+   		<include layout="@layout/top_layout" />  
+      
+       	<RelativeLayout
+            android:layout_width="85dp"
+            android:layout_height="100dp" 
+            android:background="@drawable/pedding_index01"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp" />
+    	
+       	<TextView
+	        android:id="@+id/tv_unfinshpedding"
+	        android:layout_width="240dp"
+	        android:layout_height="36dp"
+	        android:layout_marginTop="150dp"
+	        android:gravity="center"
+	        android:layout_gravity="center"
+	        android:text="院签报待办"
+	        android:textSize="14sp"
+	        android:textColor="#FFFFFF"
+			android:background="@drawable/login_textcorner_orange"/>
+       	
+       	<TextView
+	        android:id="@+id/tv_finshpedding"
+	        android:layout_width="240dp"
+	        android:layout_height="36dp"
+	        android:layout_marginTop="20dp"
+	        android:gravity="center"
+	        android:layout_gravity="center"
+	        android:text="院签报已办"
+	        android:textSize="14sp"
+	        android:drawablePadding="1dp"
+	        android:textColor="#717071"
+	        android:background="@drawable/login_textcorner_white"/>
+
+	</LinearLayout>
+</RelativeLayout>

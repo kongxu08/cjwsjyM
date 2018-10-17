@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" 
+    android:orientation="vertical" >
+
+    <include layout="@layout/dial_dialpad_digits" />
+
+    <FrameLayout
+        android:id="@+id/fake_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dial_action_bar_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/dial_background_color" >
+
+    <ImageButton
+            android:id="@+id/button_dialpad"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_dialpad_bg" 
+            android:contentDescription="@string/action_menu_dialpad_button"/>
+    </FrameLayout>
+    
+    <ListView
+        android:id="@+id/listview_search_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="@color/white"
+        android:layout_above="@id/fake_action_bar"
+        android:layout_below="@id/digits_container"
+        android:divider="@null" />
+
+    <include
+        android:id="@+id/dialpad"
+        layout="@layout/dial_dialpad" />
+
+</RelativeLayout>

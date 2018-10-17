@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cjwsjy.app"
+    android:versionCode="2"
+    android:versionName="2.4.5" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="26" />
+
+    <!-- 网络访问权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 拨打电话权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 允许程序监视电话权限 -->
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <!-- 发短信权限 -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <!-- 添加通讯录权限 -->
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 取得读取通讯录权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- 操作SD卡权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 相机 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 加速度感应器 -->
+    <uses-feature android:name="android.hardware.sensor.accelerometer" />
+    <!-- 指纹 -->
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+
+    <!-- 高德地图权限 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- 高德地图权限 -->
+    <!-- 用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入缓存定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.cjwsjy.app.SmApplication"
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@drawable/icon_desktop2"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:launchMode="singleTop"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="59dddba0c62dca272a000495" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="8daf65225c79f569d35a6ef744d00172" >
+        </meta-data>
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="4a00403b8ea0456068699f9c69846054" />
+
+        <!-- 定位需要的服务 -->
+        <service android:name="com.amap.api.location.APSService" />
+
+        <activity
+            android:name="com.cjwsjy.app.AppStart"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--
+        记步
+        <service
+            android:name=".pedometerservice.StepService"
+            android:priority="1000">
+            <intent-filter >
+                系统启动完成后会调用
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.DATE_CHANGED"/>
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.ACTION_TIME_TICK" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </service>
+        -->
+
+
+        <!--
+        电话
+        <receiver android:name=".phoneReceiver.PhoneReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL"/>
+                <action android:name="android.intent.action.PHONE_STATE"/>
+            </intent-filter>
+        </receiver>
+        -->
+
+
+        <!-- 登录 -->
+        <activity
+            android:name="com.cjwsjy.app.ActivityLogin"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeM.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.cjwsjy.app.ActivityLogin2"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeM.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.cjwsjy.app.main.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeM.Main_slide" />
+
+        <!-- 首页 -->
+        <activity
+            android:name="com.cjwsjy.app.homeFragment.ActivityXinwen"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeM.slide" />
+        <activity
+            android:name="com.cjwsjy.app.homeFragment.ActivityXiangmu"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeM.slide" />
+        <activity
+            android:name="com.cjwsjy.app.homeFragment.ActivityGongwen"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeM.slide" />
+        <activity
+            android:name="com.cjwsjy.app.homeFragment.ActivityYinzhang"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeM.slide" />
+        <activity
+            android:name="com.cjwsjy.app.homeFragment.ActivityBaoxiao"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeM.slide" />
+        <activity
+            android:name="com.cjwsjy.app.homeFragment.ActivityHuiyi"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeM.slide" />
+        <activity
+            android:name="com.cjwsjy.app.homeFragment.ActivityLixian"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeM.slide" />
+        <activity
+            android:name="com.cjwsjy.app.webview.WebViewHome2$ActivityListLixian"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeM.slide" />
+        <activity
+            android:name="com.cjwsjy.app.homeFragment.ActivityBiaozhun"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeM.slide" />
+        <activity
+            android:name="com.cjwsjy.app.homeFragment.ActivityYewu"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeM.slide" />
+        <activity
+            android:name="com.cjwsjy.app.homeFragment.ActivityDangan1"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeM.slide" />
+        <activity
+            android:name="com.cjwsjy.app.homeFragment.ActivityDangan2"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeM.slide" />
+        <activity
+            android:name="com.cjwsjy.app.homeFragment.ActivityZhibo"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeM.slide" />
+
+        <!-- 拾联科技 -->
+        <activity
+            android:name="com.cjwsjy.app.wholeally.activity.QyDeviceActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeM.slide" />
+        <activity
+            android:name="com.cjwsjy.app.wholeally.activity.QyVideoControlActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeM.slide" />
+        <activity
+            android:name="com.cjwsjy.app.wholeally.activity.QyVideoControlActivity2"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppThemeM.slide" />
+        <activity
+            android:name="com.cjwsjy.app.wholeally.activity.QyPlayBackActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeM.slide" />
+
+        <!-- 新闻中心 -->
+        <activity
+            android:name="com.cjwsjy.app.news.ActivityNews"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeM.slide" />
+        <activity
+            android:name="com.cjwsjy.app.news.ActivityNewsSearch"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeM.slide" />
+
+        <!-- 出差审批 -->
+        <activity
+            android:name="com.cjwsjy.app.outoffice.OutOfficeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeM.slide" />
+        <activity
+            android:name="com.cjwsjy.app.outoffice.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.cjwsjy.app.outoffice.OutOfficeListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+
+        <!-- WebView -->
+        <activity
+            android:name="com.cjwsjy.app.webview.WebViewHome"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeM.slide" />
+        <activity
+            android:name="com.cjwsjy.app.webview.WebViewHome2"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.DialogWhenLarge" />
+        <activity
+            android:name="com.cjwsjy.app.webview.WebViewHome3"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.DialogWhenLarge" />
+        <activity
+            android:name="com.cjwsjy.app.webview.WebViewscan"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeM.slide" />
+        <activity
+            android:name="com.cjwsjy.app.webview.WebViewBQ"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.DialogWhenLarge" />
+        <activity
+            android:name="com.cjwsjy.app.webview.WebViewCanteen"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeM.slide" />
+        <activity
+            android:name="com.cjwsjy.app.webview.WebViewBiaoZhun"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeM.slide" />
+
+        <!-- 院签报 -->
+        <activity
+            android:name="com.cjwsjy.app.pedding.PeddingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeM.slide" />
+        <activity
+            android:name="com.cjwsjy.app.pedding.FinishPeddingListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.cjwsjy.app.pedding.UnFinishPeddingListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.cjwsjy.app.pedding.PeddingFrameActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+
+        <!-- 我的会议 -->
+        <activity
+            android:name="com.cjwsjy.app.meeting.ActivityMeeting"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeM.slide" />
+        <activity
+            android:name="com.cjwsjy.app.meeting.ActivityMeetingdetail1"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.cjwsjy.app.meeting.ActivityMeetingdetail2"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.cjwsjy.app.meeting.ActivityMeetingziliao"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeM.slide" />
+        <activity
+            android:name="com.cjwsjy.app.meeting.ActivityMeetingVoteItem"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeM.slide" />
+
+        <!-- 扫一扫 -->
+        <activity
+            android:name="com.cjwsjy.app.scanning.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeM.slide"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <!-- 计步 -->
+        <activity
+            android:name="com.cjwsjy.app.pedometer.ActivityPedometer"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/android:Theme.Holo.Light"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.cjwsjy.app.pedometer.ActivityPedometer2"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/android:Theme.Holo.Light"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <!-- 市场经营 -->
+        <activity
+            android:name="com.cjwsjy.app.webview.Activity_BQ"
+            android:screenOrientation="landscape"
+            android:theme="@style/android:Theme.Holo.NoActionBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <!-- 车辆管理 -->
+        <activity
+            android:name="com.cjwsjy.app.vehicle.ActivityVehcilelogo"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.cjwsjy.app.vehicle.MainUITabHostActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.cjwsjy.app.vehicle.vehileApplyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.cjwsjy.app.vehicle.selectVehiltTypeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.cjwsjy.app.vehicle.selectAddressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cjwsjy.app.vehicle.selectAddress2Activity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.cjwsjy.app.vehicle.selectAddress3Activity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.cjwsjy.app.vehicle.selectReasonActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cjwsjy.app.vehicle.selectCountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cjwsjy.app.vehicle.orderChangeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.cjwsjy.app.vehicle.orderChangeDitialActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.cjwsjy.app.vehicle.orderQueryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.cjwsjy.app.vehicle.orderQueryDitialActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.cjwsjy.app.vehicle.orderAuditeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.cjwsjy.app.vehicle.orderAuditeDitialActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.cjwsjy.app.vehicle.vehileCommentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.cjwsjy.app.vehicle.vehileCommenDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.cjwsjy.app.vehicle.logoDispatchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cjwsjy.app.vehicle.VehileDispatchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.cjwsjy.app.vehicle.vehileApply_dispatchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.cjwsjy.app.vehicle.VehileDispatchDitialActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.cjwsjy.app.vehicle.departmentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.cjwsjy.app.vehicle.selectDriverActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.cjwsjy.app.vehicle.selectVehicleActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.cjwsjy.app.vehicle.selectVehileByActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.cjwsjy.app.vehicle.selectVehileModelActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.cjwsjy.app.vehicle.selectVehilePailiangActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.cjwsjy.app.vehicle.VehileMapActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.cjwsjy.app.vehicle.VehileMapActivity2"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.cjwsjy.app.vehicle.EmployeeSelectsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+
+        <!-- 食堂 -->
+        <activity
+            android:name="com.cjwsjy.app.Canteen.ActivityCanteenMain"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeM.Main_slide" />
+    </application>
+
+</manifest>

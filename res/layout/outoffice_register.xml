@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#FFFFFF">
+    
+    <include layout="@layout/top_layout" /> 
+    
+ 	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">  
+		
+ 	   <RelativeLayout
+          android:layout_width="300dp"
+          android:layout_height="match_parent" 
+          android:layout_gravity="center">  
+	 	    <EditText
+	            android:id="@+id/et_outTime"
+	            android:layout_width="300dp"
+	            android:layout_height="40dp"
+	            android:layout_centerVertical="true"
+	            android:background="@drawable/edittext_login"
+	            android:hint="离岗时间"
+	            android:paddingLeft="5dp"
+	            android:singleLine="true"
+	            android:textColorHint="#DDDDDD"
+	            android:textSize="16sp" 
+	         	android:layout_gravity="center"
+	         	android:layout_marginTop="7dp"
+	         	android:layout_marginBottom="7dp"/>
+ 	    
+	 	    <Spinner
+		        android:id="@+id/spinner1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="45dp"
+		        android:layout_alignRight="@id/et_outTime"
+		        android:layout_marginTop="5dp"
+				/>
+ 	    </RelativeLayout>
+ 	    
+ 	   <RelativeLayout
+          android:layout_width="300dp"
+          android:layout_height="match_parent" 
+          android:layout_gravity="center"> 
+	 	    <EditText
+	            android:id="@+id/et_backTime"
+	            android:layout_width="300dp"
+	            android:layout_height="40dp"
+	            android:layout_centerVertical="true"
+	            android:background="@drawable/edittext_login"
+	            android:hint="返岗时间"
+	            android:paddingLeft="5dp"
+	            android:singleLine="true"
+	            android:textColorHint="#DDDDDD"
+	            android:textSize="16sp" 
+	         	android:layout_gravity="center"
+	         	android:layout_marginTop="7dp"
+	         	android:layout_marginBottom="7dp"/>
+ 	    	
+	 	    <Spinner
+		        android:id="@+id/spinner2"
+		        android:layout_width="wrap_content"
+		        android:layout_height="45dp"
+		        android:layout_alignRight="@id/et_backTime"
+		        android:layout_marginTop="5dp"
+			/>
+ 	    </RelativeLayout>
+ 	    
+ 	     <EditText
+            android:id="@+id/et_address"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/edittext_login"
+            android:hint="外出地点"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:textColorHint="#DDDDDD"
+            android:textSize="16sp" 
+         	android:layout_gravity="center"
+         	android:layout_marginTop="7dp"
+         	android:layout_marginBottom="7dp"/>
+
+ 	     <EditText
+            android:id="@+id/et_event"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/edittext_login"
+            android:hint="外出事由"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:textColorHint="#DDDDDD"
+            android:textSize="16sp"
+         	android:layout_gravity="center"
+         	android:layout_marginTop="7dp"
+         	android:layout_marginBottom="7dp" />
+		
+ 	     <EditText
+            android:id="@+id/et_submitUser"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/edittext_login"
+            android:hint="审核人"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:textColorHint="#DDDDDD"
+            android:textSize="16sp"
+         	android:layout_gravity="center"
+         	android:layout_marginTop="7dp"
+         	android:layout_marginBottom="7dp"/>
+ 	     <ListView 
+             android:id="@+id/lv_list"   
+             android:layout_width="fill_parent"  
+             android:layout_height="wrap_content" />
+ 	     
+         <TextView
+            android:id="@+id/tv_submit"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:background="#2A6FBA"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+         	android:layout_gravity="center"
+            android:text="提交" />
+         
+           
+	</LinearLayout>
+</LinearLayout>

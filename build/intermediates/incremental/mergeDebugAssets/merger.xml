@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config=":library"><source path="D:\cjwsjy\cjwsjyM\library\build\intermediates\packagedAssets\debug"/></dataSet><dataSet config="main"><source path="D:\cjwsjy\cjwsjyM\assets"/><source path="D:\cjwsjy\cjwsjyM\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="D:\cjwsjy\cjwsjyM\build-types\debug\assets"/></dataSet></merger>

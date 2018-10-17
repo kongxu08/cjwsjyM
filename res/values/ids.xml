@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="main_radio" type="id">false</item>
+    <item name="radio_home" type="id">false</item>
+    <item name="radio_address" type="id">false</item>
+    <item name="radio_history" type="id">false</item>
+    <item name="radio_collect" type="id">false</item>
+    <item name="radio_search" type="id">false</item>
+
+    <!-- 联系人详情ID -->
+    <item name="emp_id_username" type="id">false</item>
+    <item name="emp_id_department" type="id">false</item>
+    <item name="emp_id_userPost" type="id">false</item>
+    <item name="emp_id_iphone" type="id">false</item>
+    <item name="emp_id_phoneNumber" type="id">false</item>
+    <item name="emp_id_telephone" type="id">false</item>
+    <item name="emp_id_shortNumber" type="id">false</item>
+    <item name="emp_id_nameSpell" type="id">false</item>
+    <item name="emp_id_email" type="id">false</item>
+    <item name="emp_keep_btn" type="id">false</item>
+    <item name="empinfo_toPhone_btn" type="id">false</item>
+    <item name="empinfo_toSms_btn" type="id">false</item>
+    <item name="empinfo_toEmail_btn" type="id">false</item>
+    <item name="empinfo_addPhone_btn" type="id">false</item>
+    
+    <!-- scanning -->
+	<!-- Messages IDs -->
+	<item type="id" name="auto_focus"/>
+	<item type="id" name="decode"/>
+	<item type="id" name="decode_failed"/>
+	<item type="id" name="decode_succeeded"/>
+	<item type="id" name="encode_failed"/>
+	<item type="id" name="encode_succeeded"/>
+	<item type="id" name="launch_product_query"/>
+	<item type="id" name="quit"/>
+	<item type="id" name="restart_preview"/>
+	<item type="id" name="return_scan_result"/>
+	<item type="id" name="search_book_contents_failed"/>
+	<item type="id" name="search_book_contents_succeeded"/>
+
+</resources>

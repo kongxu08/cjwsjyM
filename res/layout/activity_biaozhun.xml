@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/re_outofoffice_index"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#FFFFFF">
+   
+   <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="vertical"> 
+   	
+   		<include layout="@layout/top_layout" />
+
+	   <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="@drawable/biaozhun" />
+
+	   <TextView
+	            android:id="@+id/tv_register"
+	            android:layout_width="300dp"
+	            android:layout_height="40dp"
+	            android:background="@drawable/textcorner1"
+	            android:textSize="16sp"
+	            android:textColor="#FFFFFF"
+	            android:gravity="center"
+	         	android:layout_gravity="center"
+	         	android:layout_marginTop="20dp"
+	            android:text="标准搜索" />
+
+	   <TextView
+               android:id="@+id/tv_outofoffice"
+               android:layout_width="300dp"
+               android:layout_height="40dp"
+               android:background="@drawable/textcorner2"
+               android:textSize="16sp"
+               android:textColor="#FFFFFF"
+               android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+               android:text="个人收藏" />
+
+	   <TextView
+               android:id="@+id/tv_guanli"
+               android:layout_width="300dp"
+               android:layout_height="40dp"
+               android:background="@drawable/textcorner3"
+               android:textSize="16sp"
+               android:textColor="#FFFFFF"
+               android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+               android:text="文件管理" />
+
+	   <TextView
+		   android:id="@+id/tv_lixian"
+		   android:layout_width="300dp"
+		   android:layout_height="40dp"
+		   android:background="@drawable/textcorner5"
+		   android:textSize="16sp"
+		   android:textColor="#FFFFFF"
+		   android:gravity="center"
+		   android:layout_gravity="center"
+		   android:layout_marginTop="20dp"
+		   android:text="离线阅览" />
+
+	</LinearLayout>
+</RelativeLayout>

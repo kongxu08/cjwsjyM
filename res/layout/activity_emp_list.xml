@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coupon_ft"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/head" />
+
+  <LinearLayout 
+      android:layout_height="45dp"
+      android:layout_width="fill_parent"
+      android:background="#cccccc"
+      android:gravity="center_vertical"
+      >
+       <TextView 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="已选人员:"
+          style="@style/gray16"
+          android:layout_marginLeft="12dp"
+          />
+        <TextView 
+            android:id="@+id/name"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          style="@style/black16_cu"
+          android:layout_marginLeft="5dp"
+          
+          />
+   </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/current_xline" /> 
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        >
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/list_view"
+            style="@style/list_view_style"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+             android:divider="@drawable/current_xline"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/nullText"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="暂无数据"
+            android:visibility="gone" />
+
+       
+    </RelativeLayout>
+
+</LinearLayout>

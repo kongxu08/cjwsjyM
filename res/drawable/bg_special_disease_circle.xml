@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">  
+      
+    <item>  
+        <shape android:shape="oval" >  
+            <corners android:radius="30.5dp"/>  
+            <solid android:color="@color/dial_key_color" />  
+            <size android:width="61dp" android:height="61dp"/>  
+        </shape>  
+    </item>  
+      
+    <item android:bottom="1dp" android:right="1dp" android:top="1dp" android:left="1dp" >  
+        <selector xmlns:android="http://schemas.android.com/apk/res/android">  
+            <item android:state_pressed="true">  
+                <shape android:shape="oval" >  
+                    <corners android:radius="30dp"/>  
+                    <solid android:color="@color/dial_key_pressed_color" />  
+                    <size android:width="60dp" android:height="60dp"/>  
+                </shape>  
+            </item>  
+              
+            <item>  
+                <shape android:shape="oval" >  
+                    <corners android:radius="30dp"/>  
+                    <solid android:color="@color/dial_background_color" />  
+                    <size android:width="60dp" android:height="60dp"/>  
+                </shape>  
+            </item>  
+          
+        </selector>
+    </item>  
+      
+</layer-list>

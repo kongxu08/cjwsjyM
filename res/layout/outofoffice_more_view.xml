@@ -1,0 +1,185 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_pop_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" >
+	
+       <RelativeLayout 
+            android:id="@+id/tv_regiest"
+	        android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:gravity="center"
+		    android:layout_gravity="center" >
+		    <ImageView
+	            android:id="@+id/img_signature_action01"
+	            android:layout_width="22dp"
+	            android:layout_height="20dp"	            
+	            android:layout_marginTop="5dp"
+	            android:src="@drawable/img_signature_action01" 
+	            android:contentDescription="@null"/> 
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="5dp"
+	            android:text="我要出差"
+	        	android:textColor="#C63549"
+	        	android:layout_toRightOf="@+id/img_signature_action01"/>
+		</RelativeLayout>
+		
+        <ImageView
+            android:id="@+id/regiest_xian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/list_hengxian" 
+            android:contentDescription="@null"/>
+        
+       <RelativeLayout 
+            android:id="@+id/tv_outofoffice"
+	        android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:gravity="center"
+		    android:layout_gravity="center"> 
+		    <ImageView
+	            android:id="@+id/img_signature_action02"
+	            android:layout_width="22dp"
+	            android:layout_height="20dp"
+	            android:layout_marginTop="5dp"
+	            android:src="@drawable/img_signature_action02" 
+	            android:contentDescription="@null"/> 
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="5dp"
+	            android:text="审批待办" 
+	            android:textColor="#C63549"
+	            android:layout_toRightOf="@+id/img_signature_action02"/>
+		</RelativeLayout>
+		
+        <ImageView
+            android:id="@+id/outofoffice_xian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/list_hengxian" 
+            android:contentDescription="@null"/>
+        
+         <RelativeLayout 
+            android:id="@+id/tv_search"
+	        android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:gravity="center"
+		    android:layout_gravity="center"> 
+		    <ImageView
+	            android:id="@+id/img_signature_action03"
+	            android:layout_width="22dp"
+	            android:layout_height="20dp" 
+	            android:layout_marginTop="5dp"
+	            android:src="@drawable/img_signature_action03" 
+	            android:contentDescription="@null"/> 
+	        <TextView
+	           
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="5dp"
+	            android:text="在岗查询" 
+	            android:textColor="#C63549"
+	            android:layout_toRightOf="@+id/img_signature_action03"/>
+		</RelativeLayout>
+		
+        <ImageView
+            android:id="@+id/search_xian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/list_hengxian" 
+            android:contentDescription="@null"/>
+        
+        <RelativeLayout
+            android:id="@+id/tv_history" 
+	        android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:gravity="center"
+		    android:layout_gravity="center"> 
+		    <ImageView
+	            android:id="@+id/img_signature_action04"
+	            android:layout_width="22dp"
+	            android:layout_height="20dp"
+	            android:layout_marginTop="5dp"
+	            android:src="@drawable/img_signature_action04" 
+	            android:contentDescription="@null"/> 
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="5dp"
+	            android:text="登记历史"
+	            android:textColor="#C63549" 
+	            android:layout_toRightOf="@+id/img_signature_action04"/>
+			
+		</RelativeLayout>
+	        
+       <ImageView
+            android:id="@+id/history_xian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/list_hengxian" 
+            android:contentDescription="@null"/>
+      
+       <RelativeLayout 
+            android:id="@+id/tv_searchUser"
+	        android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:gravity="center"
+		    android:layout_gravity="center">
+			<ImageView
+	            android:id="@+id/img_signature_action05"
+	            android:layout_width="22dp"
+	            android:layout_height="20dp"    
+	            android:layout_marginTop="5dp"
+	            android:src="@drawable/img_signature_action05" 
+	            android:contentDescription="@null"/>  
+	       <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="5dp"
+	            android:text="查找员工" 
+	            android:textColor="#C63549"
+	            android:layout_toRightOf="@+id/img_signature_action05" />
+	    	
+		</RelativeLayout>  
+		
+       <ImageView
+            android:id="@+id/searchUser_xian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/list_hengxian" 
+            android:contentDescription="@null"/>
+       
+       <TextView
+           android:id="@+id/tv_cancle"
+           android:layout_width="fill_parent"
+           android:layout_height="34dp"
+           android:layout_marginTop="8dp"
+           android:gravity="center"
+           android:layout_gravity="center"
+           android:text="取消"
+           android:textColor="#FFFFFF"
+           android:background="#3BB4F2" />
+ 
+    </LinearLayout>
+
+</RelativeLayout>

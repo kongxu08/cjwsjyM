@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/digits_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:background="@color/dial_background_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialpad_digits_height"
+        android:background="@color/dial_background_color"
+        android:orientation="horizontal" >
+        
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/dial_background_color"
+            android:contentDescription="@string/description_delete_button"
+            android:paddingLeft="@dimen/dialpad_digits_padding"
+            android:paddingRight="@dimen/dialpad_digits_padding"
+            android:src="@drawable/btn_det01_2x"
+            android:state_enabled="false"
+            android:visibility="gone" />
+
+        <view
+            android:id="@+id/digits"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            class="com.cjwsjy.app.dial.view.DigitsEditText"
+            android:background="@color/dial_background_color"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:fontFamily="sans-serif-light"
+            android:freezesText="true"
+            android:gravity="center"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/dialpad_digits_padding"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textColor="@color/dial_key_text_color"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/dialpad_digits_text_size"
+            android:textStyle="normal" />
+        
+        <ImageButton
+            android:id="@+id/deleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/dial_background_color"
+            android:contentDescription="@string/description_delete_button"
+            android:paddingLeft="@dimen/dialpad_digits_padding"
+            android:paddingRight="@dimen/dialpad_digits_padding"
+            android:src="@drawable/btn_det02_2x"
+            android:state_enabled="false"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/dial_background_color"
+        android:orientation="horizontal" >
+                
+    <TextView
+        android:id="@+id/digits_info"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="right"
+        android:background="@color/dial_background_color"
+        android:fontFamily="sans-serif-light"
+        android:freezesText="true"
+        android:text="张三(1/10)"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="@color/dial_key_text_color"
+        android:textCursorDrawable="@null"
+        android:textSize="@dimen/dialpad_digits_info_size"
+        android:textStyle="normal" />
+
+       <ImageButton
+            android:id="@+id/imagearrow"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/dial_background_color"
+            android:contentDescription="@string/description_delete_button"
+            android:paddingLeft="@dimen/dialpad_digits_padding"
+            android:paddingRight="@dimen/dialpad_digits_padding"
+            android:layout_toRightOf="@+id/digits_info"
+            android:src="@drawable/dial_arrow_button"/>
+
+    </LinearLayout>
+
+</LinearLayout>

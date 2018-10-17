@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coupon_ft"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/head" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#c2c1c7"
+        android:gravity="center"
+        android:orientation="horizontal"
+            android:visibility="gone"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_edittext"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/search_img"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/icon_sousuo" />
+
+            <EditText
+                android:id="@+id/search_text"
+                style="@style/black16_cu"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="请输入待派车辆名称"
+                android:imeOptions="actionSearch"
+                android:lines="1"
+                android:paddingLeft="10dp"
+                android:singleLine="true" />
+
+        </LinearLayout>
+    </LinearLayout>
+    
+      <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_tab"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            >
+            <RadioGroup
+                            android:id="@+id/rg_state_user"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center_vertical"
+                            android:layout_margin="3dp"
+                            android:orientation="horizontal" >
+                            
+                      <RadioButton 
+                          android:id="@+id/rb_state_user_1"
+                         android:layout_width="0dp"
+                         android:layout_weight="1"
+                         android:layout_height="fill_parent"
+                         android:text="全部"
+                         android:gravity="center"
+                         android:typeface="sans"
+                         android:textColor="@color/selector_item_offer3"
+                        android:padding="4dip"
+                        android:background="@drawable/selector_terminal_param2"
+                        android:checked="true"
+                         android:button="@null"/>
+                      
+                         <RadioButton 
+                          android:id="@+id/rb_state_user_2"
+                          android:layout_width="0dp"
+                         android:layout_weight="1"
+                         android:layout_height="fill_parent"
+                         android:text="已申请"
+                         android:gravity="center"
+                         android:textColor="@color/selector_item_offer3"
+                        android:padding="4dip"
+                         android:typeface="sans"
+                         android:background="@drawable/selector_terminal_param2"
+                         android:button="@null"/>
+                         
+                         <RadioButton 
+                          android:id="@+id/rb_state_user_3"
+                         android:layout_width="0dp"
+                         android:layout_weight="1"
+                         android:layout_height="fill_parent"
+                         android:text="已调度"
+                         android:gravity="center"
+                         android:textColor="@color/selector_item_offer3"
+                        android:padding="4dip"
+                         android:typeface="sans"
+                        android:background="@drawable/selector_terminal_param2"
+                         android:button="@null"/>
+                            
+                        </RadioGroup>
+          
+      </LinearLayout>
+
+<!--     <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/current_xline" /> -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        >
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/list_view"
+            style="@style/list_view_style"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@drawable/current_xline"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/nullText"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="暂无数据"
+            android:visibility="gone" />
+
+       
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/re_outofoffice_index"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+   
+   <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="vertical"> 
+   	
+   		<include layout="@layout/top_layout" />  
+      
+       	<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp" 
+            android:background="@drawable/outoffice" />
+    
+	    <TextView
+	            android:id="@+id/tv_register"
+	            android:layout_width="300dp"
+	            android:layout_height="40dp"
+	            android:background="@drawable/textcorner1"
+	            android:textSize="16sp"
+	            android:textColor="#FFFFFF"
+	            android:gravity="center"
+	         	android:layout_gravity="center"
+	         	android:layout_marginTop="20dp"
+	            android:text="我要出差" />
+	    <TextView
+	            android:id="@+id/tv_outofoffice"
+	            android:layout_width="300dp"
+	            android:layout_height="40dp"
+	            android:background="@drawable/textcorner2"
+	            android:textSize="16sp"
+	            android:textColor="#FFFFFF"
+	            android:gravity="center"
+	         	android:layout_gravity="center"
+	         	android:layout_marginTop="20dp"
+	            android:text="审批待办" />
+	    <TextView
+	            android:id="@+id/tv_search"
+	            android:layout_width="300dp"
+	            android:layout_height="40dp"
+	            android:background="@drawable/textcorner3"
+	            android:textSize="16sp"
+	            android:textColor="#FFFFFF"
+	            android:gravity="center"
+	         	android:layout_gravity="center"
+	         	android:layout_marginTop="20dp"
+	            android:text="登记历史" />
+
+	   <TextView
+		   android:id="@+id/tv_leader"
+		   android:layout_width="300dp"
+		   android:layout_height="40dp"
+		   android:background="@drawable/textcorner7"
+		   android:textSize="16sp"
+		   android:textColor="#FFFFFF"
+		   android:gravity="center"
+		   android:layout_gravity="center"
+		   android:layout_marginTop="20dp"
+		   android:text="领导动态" />
+
+	   <TextView
+		   android:id="@+id/tv_user"
+		   android:layout_width="300dp"
+		   android:layout_height="40dp"
+		   android:background="@drawable/textcorner8"
+		   android:textSize="16sp"
+		   android:textColor="#FFFFFF"
+		   android:gravity="center"
+		   android:layout_gravity="center"
+		   android:layout_marginTop="20dp"
+		   android:text="本单位员工动态" />
+
+	   <TextView
+		   android:id="@+id/tv_baobeisq"
+		   android:layout_width="300dp"
+		   android:layout_height="40dp"
+		   android:background="@drawable/textcorner9"
+		   android:textSize="16sp"
+		   android:textColor="#FFFFFF"
+		   android:gravity="center"
+		   android:layout_gravity="center"
+		   android:layout_marginTop="20dp"
+		   android:text="报备申请"/>
+
+	   <TextView
+		   android:id="@+id/tv_baobeilb"
+		   android:layout_width="300dp"
+		   android:layout_height="40dp"
+		   android:background="@drawable/textcorner10"
+		   android:textSize="16sp"
+		   android:textColor="#FFFFFF"
+		   android:gravity="center"
+		   android:layout_gravity="center"
+		   android:layout_marginTop="20dp"
+		   android:text="报备列表" />
+
+	</LinearLayout>
+</RelativeLayout>

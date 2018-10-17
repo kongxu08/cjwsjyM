@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#ededed"
+    >
+    
+    <include layout="@layout/head" 
+        android:id="@+id/head"
+        />
+  
+        <ScrollView
+            android:id="@+id/scroll_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/head"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                 
+                    
+                      <LinearLayout
+                          android:id="@+id/ll_type"
+                          android:layout_width="match_parent"
+                          android:layout_height="55dp"
+                          android:background="#fff"
+                          android:gravity="center_vertical"
+                          android:paddingLeft="5dp" >
+
+                          <TextView
+                              style="@style/black16_cu"
+                              android:layout_width="0dp"
+                              android:layout_height="wrap_content"
+                              android:layout_marginLeft="12dp"
+                              android:layout_weight="0.6"
+                              android:text="类型 " />
+
+                          <TextView
+                              android:id="@+id/type_name"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_marginLeft="8dp"
+                              android:textColor="#666666"
+                              android:textSize="16sp"
+                              android:text="全部"
+                              android:layout_marginRight="5dp"
+                              android:typeface="sans" />
+
+                          <ImageView
+                              android:id="@+id/jt1"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_gravity="right|center_vertical"
+                              android:layout_marginRight="12dp"
+                              android:layout_marginLeft="3dp"
+                              android:src="@drawable/icon_jiantou" />
+                      </LinearLayout>
+
+                  <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/current_line_bg" />
+                  
+                    <LinearLayout
+                        android:id="@+id/ll_model"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dp"
+                        android:background="#fff"
+                         >
+                        
+                         <TextView
+                             style="@style/black16_cu"
+                             android:layout_width="0dp"
+                             android:layout_height="wrap_content"
+                             android:layout_marginLeft="12dp"
+                             android:layout_weight="0.44"
+                             android:text="品牌 " />
+
+                          <TextView
+                              android:id="@+id/modle_name"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_marginLeft="8dp"
+                              android:textColor="#666666"
+                              android:textSize="16sp"
+                              android:text="全部"
+                              android:layout_marginRight="5dp"
+                              android:typeface="sans" />
+
+                          <ImageView
+                              android:id="@+id/jt2"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_gravity="right|center_vertical"
+                              android:layout_marginRight="12dp"
+                              android:layout_marginLeft="3dp"
+                              android:src="@drawable/icon_jiantou" />
+                    </LinearLayout>
+
+                  <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/current_line_bg" />
+                  
+                    <LinearLayout
+                        android:id="@+id/ll_pailiang"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dp"
+                        android:background="#fff"
+                         >
+                        
+                       <TextView
+                              style="@style/black16_cu"
+                              android:layout_width="0dp"
+                              android:layout_height="wrap_content"
+                              android:layout_marginLeft="12dp"
+                              android:layout_weight="0.6"
+                              android:text="排量 " />
+
+                          <TextView
+                              android:id="@+id/pailiang_name"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_marginLeft="8dp"
+                              android:textColor="#666666"
+                              android:textSize="16sp"
+                              android:text="全部"
+                              android:layout_marginRight="5dp"
+                              android:typeface="sans" />
+
+                          <ImageView
+                              android:id="@+id/jt3"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_gravity="right|center_vertical"
+                              android:layout_marginRight="12dp"
+                              android:layout_marginLeft="3dp"
+                              android:src="@drawable/icon_jiantou" />
+                    </LinearLayout>
+
+                  <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/current_line_bg" />
+                   
+                  <LinearLayout
+                        android:id="@+id/ll_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:background="#fff"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical"
+                         >
+                    </LinearLayout>
+                        
+            </LinearLayout>
+            
+            
+        </ScrollView>
+   
+</RelativeLayout>

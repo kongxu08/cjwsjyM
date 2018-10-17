@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ededed"
+    android:orientation="vertical" >
+    
+      <include layout="@layout/head" 
+        android:id="@+id/head"
+          />
+   
+         
+       
+      <EditText
+                android:id="@+id/et_reason"
+                style="@style/black16_cu"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_edittext"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="请输入用车事由"
+                android:padding="10dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="22dp"
+                android:lines="1"
+                />
+      <Button
+            android:id="@+id/btn_ok"
+            style="@style/white18"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/onclick_commit_btn"
+            android:text=" 完成" />
+</LinearLayout>

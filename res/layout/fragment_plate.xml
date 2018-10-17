@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:fadingEdge="vertical"
+    android:scrollbars="none" >
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+	  <!-- 出差审批 -->
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="#EFEFEF">
+	       <ImageView
+	            android:id="@+id/iv_outoffoffice"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:layout_centerVertical="true"
+	            android:src="@drawable/plate_1"
+	            android:layout_marginLeft="20dp" />
+	        
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_toRightOf="@+id/iv_outoffoffice"
+	            android:layout_centerVertical="true"
+	            android:text="出差审批"
+	            android:textColor="#717071"
+	            android:textSize="16sp" 
+	            android:layout_marginLeft="5dp"/>
+       </RelativeLayout>
+
+      <GridView
+          android:id="@+id/grid_plate"
+          android:layout_width="match_parent"
+          android:layout_height="230dp"
+          android:background="#ffffff"
+          android:gravity="center"
+          android:horizontalSpacing="0dp"
+          android:listSelector="@null"
+          android:numColumns="3"
+          android:stretchMode="columnWidth"
+          android:verticalSpacing="1.0dp"
+          android:scrollbars="none" >
+      </GridView>
+
+		<!-- 公文管理 -->
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="#EFEFEF">
+	       <ImageView
+	            android:id="@+id/iv_signPedding"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:layout_centerVertical="true"
+	            android:src="@drawable/plate_2" 
+	            android:layout_marginLeft="20dp"/>
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_toRightOf="@+id/iv_signPedding"
+	            android:layout_centerVertical="true"
+	            android:text="公文管理"
+	            android:textColor="#717071"
+	            android:textSize="16sp" 
+	            android:layout_marginLeft="5dp"/>
+       </RelativeLayout>
+
+      <GridView
+          android:id="@+id/grid_plate2"
+          android:layout_width="match_parent"
+          android:layout_height="340dp"
+          android:background="#ffffff"
+          android:gravity="center"
+          android:horizontalSpacing="0dp"
+          android:listSelector="@null"
+          android:numColumns="3"
+          android:stretchMode="columnWidth"
+          android:verticalSpacing="1.0dp"
+          android:scrollbars="none" >
+      </GridView>
+
+		<!-- 院签报 -->
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="43dp"
+			android:background="#EFEFEF">
+			<ImageView
+				android:id="@+id/iv_signPedding11"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"
+				android:layout_centerVertical="true"
+				android:src="@drawable/plate_10"
+				android:layout_marginLeft="20dp"/>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_toRightOf="@+id/iv_signPedding11"
+				android:layout_centerVertical="true"
+				android:text="院签报"
+				android:textColor="#717071"
+				android:textSize="16sp"
+				android:layout_marginLeft="5dp"/>
+		</RelativeLayout>
+
+		<GridView
+			android:id="@+id/grid_plate11"
+			android:layout_width="match_parent"
+			android:layout_height="120dp"
+			android:background="#ffffff"
+			android:gravity="center"
+			android:horizontalSpacing="0dp"
+			android:listSelector="@null"
+			android:numColumns="3"
+			android:stretchMode="columnWidth"
+			android:verticalSpacing="1.0dp"
+			android:scrollbars="none" >
+		</GridView>
+
+		<!-- 业务接待 -->
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="43dp"
+			android:background="#EFEFEF">
+			<ImageView
+				android:id="@+id/iv_signPedding14"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"
+				android:layout_centerVertical="true"
+				android:src="@drawable/plate_14"
+				android:layout_marginLeft="20dp"/>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_toRightOf="@+id/iv_signPedding14"
+				android:layout_centerVertical="true"
+				android:text="业务接待"
+				android:textColor="#717071"
+				android:textSize="16sp"
+				android:layout_marginLeft="5dp"/>
+		</RelativeLayout>
+
+		<GridView
+			android:id="@+id/grid_plate14"
+			android:layout_width="match_parent"
+			android:layout_height="230dp"
+			android:background="#ffffff"
+			android:gravity="center"
+			android:horizontalSpacing="0dp"
+			android:listSelector="@null"
+			android:numColumns="3"
+			android:stretchMode="columnWidth"
+			android:verticalSpacing="1.0dp"
+			android:scrollbars="none" >
+		</GridView>
+
+		<!-- 网上报销 -->
+		<RelativeLayout
+			android:id="@+id/layout_plate16"
+			android:layout_width="match_parent"
+			android:layout_height="43dp"
+			android:background="#EFEFEF">
+			<ImageView
+				android:id="@+id/iv_signPedding16"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"
+				android:layout_centerVertical="true"
+				android:src="@drawable/plate_16"
+				android:layout_marginLeft="20dp"/>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_toRightOf="@+id/iv_signPedding16"
+				android:layout_centerVertical="true"
+				android:text="网上报销"
+				android:textColor="#717071"
+				android:textSize="16sp"
+				android:layout_marginLeft="5dp"/>
+		</RelativeLayout>
+
+		<GridView
+			android:id="@+id/grid_plate16"
+			android:layout_width="match_parent"
+			android:layout_height="120dp"
+			android:background="#ffffff"
+			android:gravity="center"
+			android:horizontalSpacing="0dp"
+			android:listSelector="@null"
+			android:numColumns="3"
+			android:stretchMode="columnWidth"
+			android:verticalSpacing="1.0dp"
+			android:scrollbars="none" >
+		</GridView>
+
+    <!-- 印章管理 -->
+	<RelativeLayout
+		android:id="@+id/layout_plate4"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="#EFEFEF">
+	       <ImageView
+	            android:id="@+id/iv_signPedding3"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:layout_centerVertical="true"
+	            android:src="@drawable/plate_4" 
+	            android:layout_marginLeft="20dp"/>
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_toRightOf="@+id/iv_signPedding3"
+	            android:layout_centerVertical="true"
+	            android:text="印章管理"
+	            android:textColor="#717071"
+	            android:textSize="16sp" 
+	            android:layout_marginLeft="5dp"/>
+       </RelativeLayout>
+
+      <GridView
+          android:id="@+id/grid_plate4"
+          android:layout_width="match_parent"
+          android:layout_height="120dp"
+          android:background="#ffffff"
+          android:gravity="center"
+          android:horizontalSpacing="0dp"
+          android:listSelector="@null"
+          android:numColumns="3"
+          android:stretchMode="columnWidth"
+          android:verticalSpacing="1.0dp"
+          android:scrollbars="none" >
+      </GridView>
+
+		<!-- 会议管理 -->
+		<RelativeLayout
+			android:id="@+id/layout_plate7"
+			android:layout_width="match_parent"
+			android:layout_height="43dp"
+			android:background="#EFEFEF">
+			<ImageView
+				android:id="@+id/iv_signPedding7"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"
+				android:layout_centerVertical="true"
+				android:src="@drawable/plate_7"
+				android:layout_marginLeft="20dp"/>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_toRightOf="@+id/iv_signPedding7"
+				android:layout_centerVertical="true"
+				android:text="会议管理"
+				android:textColor="#717071"
+				android:textSize="16sp"
+				android:layout_marginLeft="5dp"/>
+		</RelativeLayout>
+
+		<GridView
+			android:id="@+id/grid_plate7"
+			android:layout_width="match_parent"
+			android:layout_height="230dp"
+			android:background="#ffffff"
+			android:gravity="center"
+			android:horizontalSpacing="0dp"
+			android:listSelector="@null"
+			android:numColumns="3"
+			android:stretchMode="columnWidth"
+			android:verticalSpacing="1.0dp"
+			android:scrollbars="none" >
+		</GridView>
+
+		<!-- 新闻通知 -->
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="43dp"
+			android:background="#EFEFEF">
+			<ImageView
+				android:id="@+id/iv_signPedding2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"
+				android:layout_centerVertical="true"
+				android:src="@drawable/plate_3"
+				android:layout_marginLeft="20dp"/>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_toRightOf="@+id/iv_signPedding2"
+				android:layout_centerVertical="true"
+				android:text="新闻通知"
+				android:textColor="#717071"
+				android:textSize="16sp"
+				android:layout_marginLeft="5dp"/>
+		</RelativeLayout>
+
+		<GridView
+			android:id="@+id/grid_plate3"
+			android:layout_width="match_parent"
+			android:layout_height="230dp"
+			android:background="#ffffff"
+			android:gravity="center"
+			android:horizontalSpacing="0dp"
+			android:listSelector="@null"
+			android:numColumns="3"
+			android:stretchMode="columnWidth"
+			android:verticalSpacing="1.0dp"
+			android:scrollbars="none" >
+		</GridView>
+
+      <!-- 项目管理 -->
+      <RelativeLayout
+		android:id="@+id/layout_plate8"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="#EFEFEF">
+	       <ImageView
+	            android:id="@+id/iv_signPedding8"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:layout_centerVertical="true"
+	            android:src="@drawable/plate_8" 
+	            android:layout_marginLeft="20dp"/>
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_toRightOf="@+id/iv_signPedding8"
+	            android:layout_centerVertical="true"
+	            android:text="项目管理"
+	            android:textColor="#717071"
+	            android:textSize="16sp" 
+	            android:layout_marginLeft="5dp"/>
+       </RelativeLayout>
+
+      <GridView
+          android:id="@+id/grid_plate8"
+          android:layout_width="match_parent"
+          android:layout_height="1220dp"
+          android:background="#ffffff"
+          android:gravity="center"
+          android:horizontalSpacing="0dp"
+          android:listSelector="@null"
+          android:numColumns="3"
+          android:stretchMode="columnWidth"
+          android:verticalSpacing="1.0dp"
+          android:scrollbars="none" >
+      </GridView>
+
+		<!-- 科研项目管理 -->
+		<RelativeLayout
+			android:id="@+id/layout_plate10"
+			android:layout_width="match_parent"
+			android:layout_height="43dp"
+			android:background="#EFEFEF">
+			<ImageView
+				android:id="@+id/iv_signPedding10"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"
+				android:layout_centerVertical="true"
+				android:src="@drawable/plate_17"
+				android:layout_marginLeft="20dp"/>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_toRightOf="@+id/iv_signPedding10"
+				android:layout_centerVertical="true"
+				android:text="科研项目管理"
+				android:textColor="#717071"
+				android:textSize="16sp"
+				android:layout_marginLeft="5dp"/>
+		</RelativeLayout>
+
+		<GridView
+			android:id="@+id/grid_plate10"
+			android:layout_width="match_parent"
+			android:layout_height="120dp"
+			android:background="#ffffff"
+			android:gravity="center"
+			android:horizontalSpacing="0dp"
+			android:listSelector="@null"
+			android:numColumns="3"
+			android:stretchMode="columnWidth"
+			android:verticalSpacing="1.0dp"
+			android:scrollbars="none" >
+		</GridView>
+
+		<!-- 档案管理 -->
+		<RelativeLayout
+			android:id="@+id/layout_plate14"
+			android:layout_width="match_parent"
+			android:layout_height="43dp"
+			android:visibility="visible"
+			android:background="#EFEFEF">
+			<ImageView
+				android:id="@+id/iv_signPedding15"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"
+				android:layout_centerVertical="true"
+				android:src="@drawable/plate_15"
+				android:layout_marginLeft="20dp"/>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_toRightOf="@+id/iv_signPedding15"
+				android:layout_centerVertical="true"
+				android:text="档案管理"
+				android:textColor="#717071"
+				android:textSize="16sp"
+				android:layout_marginLeft="5dp"/>
+		</RelativeLayout>
+
+		<GridView
+			android:id="@+id/grid_plate15"
+			android:layout_width="match_parent"
+			android:layout_height="120dp"
+			android:background="#ffffff"
+			android:visibility="visible"
+			android:gravity="center"
+			android:horizontalSpacing="0dp"
+			android:listSelector="@null"
+			android:numColumns="3"
+			android:stretchMode="columnWidth"
+			android:verticalSpacing="1.0dp"
+			android:scrollbars="none" >
+		</GridView>
+
+		<!-- 资产管理 -->
+		<RelativeLayout
+			android:id="@+id/layout_plate5"
+			android:layout_width="match_parent"
+			android:layout_height="43dp"
+			android:visibility="visible"
+			android:background="#EFEFEF">
+			<ImageView
+				android:id="@+id/iv_signPedding5"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"
+				android:layout_centerVertical="true"
+				android:src="@drawable/plate_5"
+				android:layout_marginLeft="20dp"/>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_toRightOf="@+id/iv_signPedding5"
+				android:layout_centerVertical="true"
+				android:text="资产管理"
+				android:textColor="#717071"
+				android:textSize="16sp"
+				android:layout_marginLeft="5dp"/>
+		</RelativeLayout>
+
+		<GridView
+			android:id="@+id/grid_plate5"
+			android:layout_width="match_parent"
+			android:layout_height="120dp"
+			android:background="#ffffff"
+			android:visibility="visible"
+			android:gravity="center"
+			android:horizontalSpacing="0dp"
+			android:listSelector="@null"
+			android:numColumns="3"
+			android:stretchMode="columnWidth"
+			android:verticalSpacing="1.0dp"
+			android:scrollbars="none" >
+		</GridView>
+
+		<!-- 车辆管理 -->
+      <RelativeLayout
+		android:id="@+id/layout_plate6"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="#EFEFEF">
+	       <ImageView
+	            android:id="@+id/iv_signPedding6"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:layout_centerVertical="true"
+	            android:src="@drawable/plate_6" 
+	            android:layout_marginLeft="20dp"/>
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_toRightOf="@+id/iv_signPedding6"
+	            android:layout_centerVertical="true"
+	            android:text="车辆管理"
+	            android:textColor="#717071"
+	            android:textSize="16sp" 
+	            android:layout_marginLeft="5dp"/>
+       </RelativeLayout>
+
+      <GridView
+          android:id="@+id/grid_plate6"
+          android:layout_width="match_parent"
+          android:layout_height="120dp"
+          android:background="#ffffff"
+          android:gravity="center"
+          android:horizontalSpacing="0dp"
+          android:listSelector="@null"
+          android:numColumns="3"
+          android:stretchMode="columnWidth"
+          android:verticalSpacing="1.0dp"
+          android:scrollbars="none" >
+      </GridView>
+
+		<!-- 规程规范 -->
+		<RelativeLayout
+			android:id="@+id/layout_plate13"
+			android:layout_width="match_parent"
+			android:layout_height="43dp"
+			android:background="#EFEFEF">
+			<ImageView
+				android:id="@+id/iv_signPedding13"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"
+				android:layout_centerVertical="true"
+				android:src="@drawable/plate_13"
+				android:layout_marginLeft="20dp"/>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_toRightOf="@+id/iv_signPedding13"
+				android:layout_centerVertical="true"
+				android:text="规程规范"
+				android:textColor="#717071"
+				android:textSize="16sp"
+				android:layout_marginLeft="5dp"/>
+		</RelativeLayout>
+
+		<GridView
+			android:id="@+id/grid_plate13"
+			android:layout_width="match_parent"
+			android:layout_height="120dp"
+			android:background="#ffffff"
+			android:gravity="center"
+			android:horizontalSpacing="0dp"
+			android:listSelector="@null"
+			android:numColumns="3"
+			android:stretchMode="columnWidth"
+			android:verticalSpacing="1.0dp"
+			android:scrollbars="none" >
+		</GridView>
+
+      <!-- 服务电话 -->
+      	<RelativeLayout
+		android:id="@+id/layout_plate9"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:visibility="visible" 
+        android:background="#EFEFEF">
+	       <ImageView
+	            android:id="@+id/iv_signPedding9"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:layout_centerVertical="true"
+	            android:src="@drawable/plate_9" 
+	            android:layout_marginLeft="20dp"/>
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_toRightOf="@+id/iv_signPedding9"
+	            android:layout_centerVertical="true"
+	            android:text="便捷服务"
+	            android:textColor="#717071"
+	            android:textSize="16sp" 
+	            android:layout_marginLeft="5dp"/>
+       </RelativeLayout>
+
+      <GridView
+          android:id="@+id/grid_plate9"
+          android:layout_width="match_parent"
+          android:layout_height="120dp"
+          android:background="#ffffff"
+          android:visibility="visible" 
+          android:gravity="center"
+          android:horizontalSpacing="0dp"
+          android:listSelector="@null"
+          android:numColumns="3"
+          android:stretchMode="columnWidth"
+          android:verticalSpacing="1.0dp"
+          android:scrollbars="none" >
+      </GridView>
+
+		<!-- 薪资查询 -->
+		<RelativeLayout
+			android:id="@+id/layout_plate12"
+			android:layout_width="match_parent"
+			android:layout_height="43dp"
+			android:visibility="visible"
+			android:background="#EFEFEF">
+			<ImageView
+				android:id="@+id/iv_signPedding12"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"
+				android:layout_centerVertical="true"
+				android:src="@drawable/plate_11"
+				android:layout_marginLeft="20dp"/>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_toRightOf="@+id/iv_signPedding12"
+				android:layout_centerVertical="true"
+				android:text="薪资查询"
+				android:textColor="#717071"
+				android:textSize="16sp"
+				android:layout_marginLeft="5dp"/>
+		</RelativeLayout>
+
+		<GridView
+			android:id="@+id/grid_plate12"
+			android:layout_width="match_parent"
+			android:layout_height="120dp"
+			android:background="#ffffff"
+			android:visibility="visible"
+			android:gravity="center"
+			android:horizontalSpacing="0dp"
+			android:listSelector="@null"
+			android:numColumns="3"
+			android:stretchMode="columnWidth"
+			android:verticalSpacing="1.0dp"
+			android:scrollbars="none" >
+		</GridView>
+
+		<!-- 出国 -->
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="43dp"
+			android:background="#EFEFEF">
+			<ImageView
+				android:id="@+id/iv_outoffoffice2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"
+				android:layout_centerVertical="true"
+				android:src="@drawable/plate_18"
+				android:layout_marginLeft="20dp" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_toRightOf="@+id/iv_outoffoffice2"
+				android:layout_centerVertical="true"
+				android:text="出国管理"
+				android:textColor="#717071"
+				android:textSize="16sp"
+				android:layout_marginLeft="5dp"/>
+		</RelativeLayout>
+
+		<GridView
+			android:id="@+id/grid_plate17"
+			android:layout_width="match_parent"
+			android:layout_height="120dp"
+			android:background="#ffffff"
+			android:gravity="center"
+			android:horizontalSpacing="0dp"
+			android:listSelector="@null"
+			android:numColumns="3"
+			android:stretchMode="columnWidth"
+			android:verticalSpacing="1.0dp"
+			android:scrollbars="none" >
+		</GridView>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    <TextView
+        android:id="@+id/tv_outTimeFrom"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginRight="5.0dip"
+        android:textColor="#9A9A9A"
+        android:layout_marginTop="5dp"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="56dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@id/tv_outTimeFrom"
+        android:layout_marginTop="5dp" 
+        android:layout_marginLeft="5.0dip"
+     	android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_event"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/tv_address"
+        android:gravity="center"/>
+	 <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/tv_event" 
+            android:gravity="center"
+            android:layout_gravity="center">
+	    <ImageView
+	        android:id="@+id/iv_modify"
+	        android:layout_width="56dp"
+	        android:layout_height="20dp"
+	        android:clickable="true"
+	        android:src="@drawable/today_icon"
+	        android:gravity="center" />
+	 </RelativeLayout>
+</RelativeLayout>

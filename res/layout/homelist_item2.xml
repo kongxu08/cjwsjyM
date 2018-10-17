@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_contact_item_normal"
+    android:padding="8.0dip" >
+
+       <RelativeLayout
+	    android:id="@+id/rl_finish2"
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp" 
+	    android:layout_marginTop="5dp"
+	    android:layout_marginBottom="5dp">
+   <ImageView
+       android:id="@+id/iv_icon1"
+       android:layout_width="35dp"
+       android:layout_height="35dp"
+       android:layout_marginTop="10dp"
+       android:layout_marginBottom="5dp"
+       android:contentDescription="@null"
+       android:src="@drawable/xinwen_index01"
+       android:visibility="visible"/>
+   <RelativeLayout
+	    android:id="@+id/rl_finish"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" 
+	    android:layout_toRightOf="@id/iv_icon1"
+	    android:layout_marginTop="12dp"
+	    android:paddingRight="30dp">
+	    <TextView
+	        android:id="@+id/tv_title"
+	        style="@style/list_text_info"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="18dp"   
+	        android:text="标题"
+	        android:textSize="20dp"
+	        android:textColor="#717071"
+	        android:layout_marginBottom="2dp" />
+	</RelativeLayout>
+
+	<TextView
+		android:id="@+id/tv_title2"
+		style="@style/list_text_info"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="12dp"
+		android:layout_marginBottom="2dp"
+		android:layout_marginLeft="300dp"
+		android:text="0"
+		android:textSize="20dp"
+		android:textColor="#ED1C24"/>
+
+    <ImageView
+        android:id="@+id/iv_icon2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/pedding_icon1"
+        android:layout_centerVertical="true"
+        android:contentDescription="@null" />
+	</RelativeLayout>
+</RelativeLayout>

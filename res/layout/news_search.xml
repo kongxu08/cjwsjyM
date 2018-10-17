@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+           
+    <include layout="@layout/top_layout" />
+
+           <EditText
+               android:id="@+id/et_newsTitle"
+               android:layout_width="match_parent"
+               android:layout_height="40dp"
+               android:layout_centerVertical="true"
+               android:background="@drawable/login_textcorner"
+               android:cursorVisible="true"
+               android:hint="新闻标题 "
+               android:singleLine="true"
+               android:textColorHint="#C4C4C4"
+               android:textColor="#000000"
+               android:textSize="14sp" 
+               android:layout_marginTop="20dp"
+               android:layout_marginLeft="15dp"
+               android:layout_marginRight="15dp"
+               android:paddingLeft="20dp"/>
+          
+          <EditText
+               android:id="@+id/et_newsAuthor"
+               android:layout_width="match_parent"
+               android:layout_height="40dp"
+               android:layout_centerVertical="true"
+               android:background="@drawable/login_textcorner"
+               android:hint="作者"
+               android:singleLine="true"
+               android:textColorHint="#C4C4C4"
+               android:textColor="#000000"
+               android:textSize="14sp" 
+               android:layout_marginTop="15dp"
+               android:layout_marginLeft="15dp"
+               android:layout_marginRight="15dp"
+               android:paddingLeft="20dp"/>
+           
+           <EditText
+               android:id="@+id/et_publishDept"
+               android:layout_width="match_parent"
+               android:layout_height="40dp"
+               android:layout_centerVertical="true"
+               android:background="@drawable/login_textcorner"
+               android:hint="发布部门"     
+               android:singleLine="true"
+               android:textColorHint="#C4C4C4"
+               android:textColor="#000000"
+               android:textSize="14sp" 
+               android:layout_marginTop="15dp"
+               android:layout_marginLeft="15dp"
+               android:layout_marginRight="15dp"
+               android:paddingLeft="20dp"/>
+           
+       <Button
+           android:id="@+id/btn_search"
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:layout_marginTop="24dp"
+           android:background="@drawable/button_corner"
+           android:enabled="true"
+           android:paddingTop="5dp"
+           android:paddingBottom="5dp"
+           android:text="开 始 搜 索"
+           android:gravity="center"
+           android:layout_gravity="center"
+           android:textColor="@android:color/white"
+           android:textSize="14sp" 
+           android:layout_marginLeft="15dp"
+           android:layout_marginRight="15dp" />
+
+</LinearLayout>

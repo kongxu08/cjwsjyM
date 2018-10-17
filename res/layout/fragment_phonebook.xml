@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/search_rel"
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:background="@drawable/search_bg"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip">
+            
+            <EditText
+                android:id="@+id/search_edt"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:background="#FFFFFF"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="@string/search_hint"
+                android:imeOptions="actionSearch"
+                android:lines="1"
+                android:paddingLeft="35dip"
+                android:singleLine="true" />
+			
+            <ImageView
+                android:id="@+id/search_icon"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_centerVertical="true"
+                android:layout_alignLeft="@id/search_edt"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/search_icon" />
+            
+            <ImageView
+                android:id="@+id/ib_searchtext_delete"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_alignRight="@id/search_edt"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/search_closebtn"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <com.cjwsjy.app.phonebook.ScrollLayout
+        android:id="@+id/scrolllayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:id="@+id/lv_first"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#ffffffff"
+            android:descendantFocusability="blocksDescendants"
+            android:divider="@color/list_divider_color"
+            android:dividerHeight="1.0px"
+            android:background="@color/white"
+            android:listSelector="@android:color/transparent" />
+
+        <ListView
+            android:id="@+id/lv_second"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#ffffffff"
+            android:descendantFocusability="blocksDescendants"
+            android:divider="@color/list_divider_color"
+            android:dividerHeight="1.0px"
+            android:background="@color/white"
+            android:listSelector="@android:color/transparent" />
+
+        <ListView
+            android:id="@+id/lv_third"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@color/list_divider_color"
+            android:dividerHeight="1.0px"
+            android:background="@color/white"
+            android:scrollingCache="true" />
+        
+        <ListView
+            android:id="@+id/lv_fourth"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@color/list_divider_color"
+            android:dividerHeight="1.0px"
+            android:background="@color/white"
+            android:scrollingCache="true" />
+        
+        <ListView
+            android:id="@+id/lv_fifth"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@color/list_divider_color"
+            android:dividerHeight="1.0px"
+            android:background="@color/white"
+            android:scrollingCache="true" />
+        
+        <ListView
+            android:id="@+id/lv_sixth"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@color/list_divider_color"
+            android:dividerHeight="1.0px"
+            android:background="@color/white"
+            android:scrollingCache="true" />
+        
+        <ListView
+            android:id="@+id/lv_seventh"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@color/list_divider_color"
+            android:dividerHeight="1.0px"
+            android:background="@color/white"
+            android:scrollingCache="true" />
+        
+        <ListView
+            android:id="@+id/lv_eighth"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@color/list_divider_color"
+            android:dividerHeight="1.0px"
+            android:background="@color/white"
+            android:scrollingCache="true" />
+        
+        <ListView
+            android:id="@+id/lv_ninth"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@color/list_divider_color"
+            android:dividerHeight="1.0px"
+            android:background="@color/white"
+            android:scrollingCache="true" />
+    </com.cjwsjy.app.phonebook.ScrollLayout> 
+        
+    </LinearLayout>
+
+</LinearLayout>

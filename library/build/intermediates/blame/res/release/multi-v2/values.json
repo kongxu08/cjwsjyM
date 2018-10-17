@@ -1,0 +1,116 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\cjwsjy\\cjwsjyM\\library\\build\\intermediates\\res\\merged\\release\\values\\values.xml",
+            "map": [
+                {
+                    "source": "D:\\cjwsjy\\cjwsjyM\\library\\res\\values\\pull_refresh_strings.xml",
+                    "from": {
+                        "startLines": "8,10,9,3,5,4",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "390,600,492,56,206,128",
+                        "endColumns": "101,113,107,71,69,77",
+                        "endOffsets": "487,709,595,123,271,201"
+                    },
+                    "to": {
+                        "startLines": "24,25,26,27,28,29",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "2070,2172,2286,2394,2466,2536",
+                        "endColumns": "101,113,107,71,69,77",
+                        "endOffsets": "2167,2281,2389,2461,2531,2609"
+                    }
+                },
+                {
+                    "source": "D:\\cjwsjy\\cjwsjyM\\library\\res\\values\\dimens.xml",
+                    "from": {
+                        "startLines": "6,7,4,5,3",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "223,287,111,166,56",
+                        "endColumns": "63,63,54,56,54",
+                        "endOffsets": "282,346,161,218,106"
+                    },
+                    "to": {
+                        "startLines": "16,17,18,19,20",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "1660,1724,1788,1843,1900",
+                        "endColumns": "63,63,54,56,54",
+                        "endOffsets": "1719,1783,1838,1895,1950"
+                    }
+                },
+                {
+                    "source": "D:\\cjwsjy\\cjwsjyM\\library\\res\\values\\ids.xml",
+                    "from": {
+                        "startLines": "3,5,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "56,133,95",
+                        "endColumns": "38,40,37",
+                        "endOffsets": "90,169,128"
+                    },
+                    "to": {
+                        "startLines": "21,22,23",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "1955,1993,2033",
+                        "endColumns": "37,39,36",
+                        "endOffsets": "1988,2028,2065"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "D:\\cjwsjy\\cjwsjyM\\library\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values\\values.xml",
+            "map": [
+                {
+                    "source": "D:\\cjwsjy\\cjwsjyM\\library\\res\\values\\pull_refresh_strings.xml",
+                    "from": {
+                        "startLines": "8,10,9,3,5,4",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "390,600,492,56,206,128",
+                        "endColumns": "101,113,107,71,69,77",
+                        "endOffsets": "487,709,595,123,271,201"
+                    },
+                    "to": {
+                        "startLines": "24,25,26,27,28,29",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "2070,2172,2286,2394,2466,2536",
+                        "endColumns": "101,113,107,71,69,77",
+                        "endOffsets": "2167,2281,2389,2461,2531,2609"
+                    }
+                },
+                {
+                    "source": "D:\\cjwsjy\\cjwsjyM\\library\\res\\values\\dimens.xml",
+                    "from": {
+                        "startLines": "6,7,4,5,3",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "223,287,111,166,56",
+                        "endColumns": "63,63,54,56,54",
+                        "endOffsets": "282,346,161,218,106"
+                    },
+                    "to": {
+                        "startLines": "16,17,18,19,20",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "1660,1724,1788,1843,1900",
+                        "endColumns": "63,63,54,56,54",
+                        "endOffsets": "1719,1783,1838,1895,1950"
+                    }
+                },
+                {
+                    "source": "D:\\cjwsjy\\cjwsjyM\\library\\res\\values\\ids.xml",
+                    "from": {
+                        "startLines": "3,5,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "56,133,95",
+                        "endColumns": "38,40,37",
+                        "endOffsets": "90,169,128"
+                    },
+                    "to": {
+                        "startLines": "21,22,23",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "1955,1993,2033",
+                        "endColumns": "37,39,36",
+                        "endOffsets": "1988,2028,2065"
+                    }
+                }
+            ]
+        }
+    ]
+}

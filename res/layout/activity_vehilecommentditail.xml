@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#ededed"
+    >
+    
+    <include layout="@layout/head" 
+        android:id="@+id/head"
+        />
+  
+        <ScrollView
+            android:id="@+id/scroll_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/head"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+   
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:background="#fff"
+                      android:orientation="horizontal"
+                      >
+
+                      <LinearLayout
+                          android:layout_width="210dp"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="0.63"
+                          android:orientation="vertical"
+                          android:padding="10dp" >
+
+                          <LinearLayout
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_marginTop="5dp"
+                              android:paddingLeft="5dp" >
+
+                              <TextView
+                                  style="@style/black16_cu"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:text="订单编号:" />
+
+                              <TextView
+                                  android:id="@+id/comment_order_no"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:layout_marginLeft="5dp"
+                                  android:textColor="#ff8c03"
+                                  android:textSize="16sp" />
+                          </LinearLayout>
+
+                          <LinearLayout
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_marginTop="8dp"
+                              android:paddingLeft="5dp" >
+
+                              <TextView
+                                  style="@style/black16_cu"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:text="用车日期:" />
+
+                              <TextView
+                                  android:id="@+id/comment_order_date"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:layout_marginLeft="5dp"
+                                  android:textColor="#ff8c03"
+                                  android:textSize="16sp" />
+                          </LinearLayout>
+
+                          <LinearLayout
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_marginTop="8dp"
+                              android:paddingLeft="5dp" >
+
+                              <TextView
+                                  style="@style/black16_cu"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:text="开始时间:" />
+
+                              <TextView
+                                  android:id="@+id/comment_order_time"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:layout_marginLeft="5dp"
+                                  android:textColor="#ff8c03"
+                                  android:textSize="16sp" />
+                          </LinearLayout>
+
+                          <LinearLayout
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_marginTop="8dp"
+                              android:paddingLeft="5dp" >
+
+                              <TextView
+                                  style="@style/black16_cu"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:text="车牌号码:" />
+
+                              <TextView
+                                  android:id="@+id/comment_car_no"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:layout_marginLeft="5dp"
+                                  android:textColor="#ff8c03"
+                                  android:textSize="16sp" />
+                          </LinearLayout>
+
+                          <LinearLayout
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_marginTop="8dp"
+                              android:paddingLeft="5dp" >
+
+                              <TextView
+                                  style="@style/black16_cu"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:text="驾  驶  员:" />
+
+                              <TextView
+                                  android:id="@+id/comment_driver"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:layout_marginLeft="5dp"
+                                  android:textColor="#ff8c03"
+                                  android:textSize="16sp" />
+                          </LinearLayout>
+                      </LinearLayout>
+
+                      <ImageView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginRight="15dp"
+                          android:layout_marginTop="15dp"
+                          android:visibility="gone"
+                          android:src="@drawable/icon_mo" />
+                  </LinearLayout>
+                        
+<!--打分并评价  -->
+
+                 <LinearLayout  
+                      android:layout_width="fill_parent"
+                      android:layout_height="40dp"
+                      android:layout_marginTop="20dp"
+                      android:gravity="center_vertical"
+                        >
+
+                           <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           style="@style/black16_cu"
+                           android:layout_marginLeft="17dp"
+                            android:text="打分并评价:" />                   
+                        
+                          <RatingBar
+                            android:id="@+id/room_ratingbar"
+                            style="@style/roomRatingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:numStars="6"
+                            android:rating="0"
+                            android:stepSize="1"
+                            android:layout_marginLeft="10dp" >
+    </RatingBar>
+                           
+                            
+                                                
+                            
+                        </LinearLayout>              
+                   
+               <EditText
+                   android:id="@+id/content"
+                style="@style/black16_cu"
+                android:layout_width="fill_parent"
+                android:layout_height="160dp"
+                android:background="@drawable/bg_edittext"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="请输入您的宝贵意见..."
+                android:textColorHint="#b2b2b2"
+                 android:imeOptions="actionNext"
+                android:gravity="left|top"
+                android:padding="10dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                />
+                        
+         <Button
+            android:id="@+id/btn_submit"
+            style="@style/white18"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/onclick_commit_btn"
+            android:text=" 提交评价" />
+         
+          
+                   
+            </LinearLayout>
+            
+            
+        </ScrollView>
+   
+</RelativeLayout>

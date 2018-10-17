@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top_layout" />
+
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:background="#DEDEDE">
+	       <ImageView
+	            android:id="@+id/iv_outoffoffice"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:background="@drawable/meeting21"/>
+       </RelativeLayout>
+
+	<TextView
+		android:id="@+id/text_pedometer1"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:layout_marginTop="5dp"
+		android:gravity="center"
+		android:text="出差审批"
+		android:textColor="#717071"
+		android:textSize="16sp"
+		android:layout_marginLeft="5dp"
+		android:background="#FFFFFF"/>
+
+	<TextView
+		android:id="@+id/text_pedometer2"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:layout_marginTop="5dp"
+		android:gravity="center"
+		android:text="出差审批"
+		android:textColor="#717071"
+		android:textSize="16sp"
+		android:layout_marginLeft="5dp"
+		android:background="#FFFFFF"/>
+
+</LinearLayout>

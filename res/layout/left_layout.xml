@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+		
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_gravity="center" 
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp">
+			
+            <ImageView
+		        android:id="@+id/icon_user"
+		        android:layout_width="60dp"
+		        android:layout_height="60dp"
+		        android:layout_marginTop="20dp"
+		        android:layout_marginLeft="20dp"
+		        android:layout_gravity="center"
+		        android:src="@drawable/menu_03" />
+            
+            <TextView
+                android:id="@+id/tv_user"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="24dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:text="代用名" 
+                android:layout_toRightOf="@+id/icon_user"/>
+        </RelativeLayout>
+        
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:text="你现在正在使用长江勘测设计研究院"/>
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="2dp"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:text="APP移动应用2.0,谢谢关注!"/>
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center" 
+             android:layout_marginTop="40dp">
+			
+            <ImageView
+		        android:id="@+id/icon1"
+		        android:layout_width="20dp"
+		        android:layout_height="20dp"
+		        android:layout_marginTop="20dp"
+		        android:layout_marginLeft="20dp"
+		        android:layout_gravity="center_horizontal"
+		        android:src="@drawable/index_14" />
+            
+            <TextView
+                android:id="@+id/menu1"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:text="帮  助" 
+                android:layout_toRightOf="@+id/icon1"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center" >
+			
+             <ImageView
+		        android:id="@+id/icon2"
+		        android:layout_width="20dp"
+		        android:layout_height="20dp"
+		        android:layout_marginTop="20dp"
+		        android:layout_marginLeft="20dp"
+		        android:layout_gravity="center_horizontal"
+		        android:src="@drawable/index_13" />
+            
+            <TextView
+                android:id="@+id/menu2"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:text="注  销"
+                android:layout_toRightOf="@+id/icon2"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center" >
+			
+             <ImageView
+		        android:id="@+id/icon3"
+		        android:layout_width="20dp"
+		        android:layout_height="20dp"
+		        android:layout_marginTop="20dp"
+		        android:layout_marginLeft="20dp"
+		        android:layout_gravity="center_horizontal"
+		        android:src="@drawable/index_15" />
+            
+            <TextView
+                android:id="@+id/menu3"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:text="关  于" 
+                android:layout_toRightOf="@+id/icon3"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

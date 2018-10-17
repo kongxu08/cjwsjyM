@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+		android:id="@+id/head_map"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+    <include layout="@layout/head"/>
+    </RelativeLayout>
+
+	<com.amap.api.maps.MapView
+	    android:id="@+id/map"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_above="@+id/headLayout_photo_second"
+	    android:layout_below="@+id/head_map"/>
+	
+	<RelativeLayout
+		android:id="@+id/headLayout_photo_second"
+		android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:background="#ededed"
+	    >
+	  
+	    <LinearLayout android:id="@+id/bottom_map_tv_lay"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_margin="5dp"
+	        android:orientation="vertical">
+	        
+	        <TextView
+				android:id="@+id/v_address2"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="车辆地址 :"
+				style="@style/black18"
+				android:layout_marginTop="3dp"/>
+
+			<TextView
+				android:id="@+id/v_address"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:textColor="@color/black"
+				android:text="湖北省武汉市解放大道1863号"
+				android:visibility="gone"
+				style="@style/black18"
+				android:layout_marginTop="6dp"
+				android:layout_marginBottom="5dp"
+			/>
+	    </LinearLayout>
+
+		<Button
+			android:text="Button"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_alignParentRight="true"
+			android:layout_alignParentEnd="true"
+			android:visibility="gone"
+			android:id="@+id/button_amap" />
+
+	</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Dialpad in the Phone app. -->
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialpad"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dial_background_color"
+    android:stretchColumns="0,2" 
+    >
+
+    <TableRow>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/dial_background_color" >
+
+            <include
+                android:id="@+id/one"
+                layout="@layout/dial_dialpad_key" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/dial_background_color" >
+
+            <include
+                android:id="@+id/two"
+                layout="@layout/dial_dialpad_key" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/dial_background_color" >
+
+            <include
+                android:id="@+id/three"
+                layout="@layout/dial_dialpad_key" />
+        </FrameLayout>
+    </TableRow>
+
+    <TableRow>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/dial_background_color" >
+
+            <include
+                android:id="@+id/four"
+                layout="@layout/dial_dialpad_key" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/dial_background_color" >
+
+            <include
+                android:id="@+id/five"
+                layout="@layout/dial_dialpad_key" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/dial_background_color" >
+
+            <include
+                android:id="@+id/six"
+                layout="@layout/dial_dialpad_key" />
+        </FrameLayout>
+    </TableRow>
+
+    <TableRow>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/dial_background_color" >
+
+            <include
+                android:id="@+id/seven"
+                layout="@layout/dial_dialpad_key" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/dial_background_color" >
+
+            <include
+                android:id="@+id/eight"
+                layout="@layout/dial_dialpad_key" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/dial_background_color" >
+
+            <include
+                android:id="@+id/nine"
+                layout="@layout/dial_dialpad_key" />
+        </FrameLayout>
+    </TableRow>
+
+    <TableRow>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/dial_background_color" >
+
+            <include
+                android:id="@+id/star"
+                layout="@layout/dial_dialpad_key" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/dial_background_color" >
+
+            <include
+                android:id="@+id/zero"
+                layout="@layout/dial_dialpad_key" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/dial_background_color" >
+
+            <include
+                android:id="@+id/pound"
+                layout="@layout/dial_dialpad_key" />
+        </FrameLayout>
+    </TableRow>
+
+</TableLayout>

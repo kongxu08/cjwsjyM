@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top_layout" />
+
+    <TextView
+        android:id="@+id/textViewtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:text="2015年国足你最讨厌的人是？（单选）"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+   <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+		<CheckBox
+            android:id="@+id/radioButton1"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="10dp"
+            android:text="RadioButton" />
+        <TextView
+            android:id="@+id/textViewtitle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/radioButton1"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:text="佩兰！垃圾中的战斗机"
+            android:textColor="#000000"
+            android:textSize="13sp" />
+		<TextView
+            android:id="@+id/textViewtitle5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@+id/textViewtitle6"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:text="156人"
+            android:textColor="#7F7F7F"
+            android:textSize="13sp" />
+		<TextView
+            android:id="@+id/textViewtitle6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentRight="true"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:text="56%"
+            android:textColor="#7F7F7F"
+            android:textSize="13sp" />
+    </RelativeLayout>
+    
+	<ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp" />
+         	
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+		<CheckBox
+            android:id="@+id/radioButton2"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="10dp"
+            android:text="RadioButton" />
+        <TextView
+            android:id="@+id/textViewtitle3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/radioButton2"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:text="菜乒乓！根本不懂足球"
+            android:textColor="#000000"
+            android:textSize="13sp" />
+		<TextView
+            android:id="@+id/textViewtitle7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@+id/textViewtitle8"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:text="156人"
+            android:textColor="#7F7F7F"
+            android:textSize="13sp" />
+		<TextView
+            android:id="@+id/textViewtitle8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentRight="true"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:text="56%"
+            android:textColor="#7F7F7F"
+            android:textSize="13sp" />
+    </RelativeLayout>
+    
+      	<ProgressBar
+            android:id="@+id/progressBar2"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp" />
+      	
+	<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+		<CheckBox
+            android:id="@+id/radioButton3"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="10dp"
+            android:text="RadioButton" />
+        <TextView
+            android:id="@+id/textViewtitle4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/radioButton3"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:text="小编，上面两个都不是人吧？"
+            android:textColor="#000000"
+            android:textSize="13sp" />
+		<TextView
+            android:id="@+id/textViewtitle9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@+id/textViewtitle10"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:text="156人"
+            android:textColor="#7F7F7F"
+            android:textSize="13sp" />
+		<TextView
+            android:id="@+id/textViewtitle10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentRight="true"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:text="56%"
+            android:textColor="#7F7F7F"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+	<ProgressBar
+            android:id="@+id/progressBar3"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp" />
+	        
+	<TextView
+        android:id="@+id/imageButton1"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="您已投票"
+        android:textColor="#3F48CC"
+        android:gravity="center"
+        android:background="#FFFFFF" />
+	      
+</LinearLayout>

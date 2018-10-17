@@ -1,0 +1,824 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#ededed"
+    >
+    
+    <include layout="@layout/head" 
+        android:id="@+id/head"
+        />
+  
+        <ScrollView
+            android:id="@+id/scroll_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/head"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout    android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:gravity="center_vertical"
+                           android:background="#ededed"
+
+                        android:paddingLeft="5dp" >
+
+                        <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginLeft="16dp"
+                           style="@style/gray17"
+                            android:text="姓名 :  " />
+
+                        <TextView
+                            android:id="@+id/userName"
+                            style="@style/black16_cu"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                            android:text="合ddd" />
+
+                        <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginLeft="30dp"
+                          style="@style/gray16"
+                            android:text="部门 : " />
+                        <TextView
+                            android:id="@+id/depart"
+                            style="@style/black16_cu"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/current_line_bg" />
+                
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dp"
+                        android:background="#fff"
+                         >
+                        
+                        <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textColor="@color/red"
+                           android:layout_marginLeft="5dp"
+                            android:text="* " />
+                        
+                        <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           style="@style/black16_cu"
+                            android:text="日        期: " />
+
+                        <RadioGroup
+                            android:id="@+id/rg_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+                            
+                      <RadioButton 
+                          android:id="@+id/rb_today"
+                         android:layout_width="0dp"
+                         android:layout_weight="1"
+                         android:layout_height="wrap_content"
+                          android:typeface="sans"
+                         android:text="今天"
+                         android:gravity="center"
+                         android:textColor="@color/selector_item_offer"
+                        android:padding="4dip"
+                        android:background="@drawable/selector_terminal_param"
+                        android:layout_marginLeft="5dp"
+                         android:button="@null"/>
+                      
+                         <RadioButton 
+                             android:id="@+id/rb_tommorow"
+                          android:layout_width="0dp"
+                         android:layout_weight="1"
+                         android:layout_height="wrap_content"
+                          android:typeface="sans"
+                         android:text="明天"
+                         android:gravity="center"
+                         android:textColor="@color/selector_item_offer"
+                        android:padding="4dip"
+                        android:background="@drawable/selector_terminal_param"
+                        android:layout_marginLeft="10dp"
+                         android:button="@null"/>
+                         
+                           <RadioButton 
+                         android:id="@+id/rb_tommorow2"
+                         android:layout_width="0dp"
+                         android:layout_weight="1"
+                         android:layout_height="wrap_content"
+                          android:typeface="sans"
+                         android:text="后天"
+                         android:gravity="center"
+                         android:textColor="@color/selector_item_offer"
+                        android:padding="4dip"
+                        android:background="@drawable/selector_terminal_param"
+                        android:layout_marginLeft="10dp"
+                         android:button="@null"/>
+                           
+                      <RadioButton 
+                              android:id="@+id/rb_date_more"
+                           android:layout_width="0dp"
+                         android:layout_weight="1"
+                         android:layout_height="wrap_content"
+                          android:typeface="sans"
+                         android:text="其他"
+                         android:gravity="center"
+                         android:textColor="@color/selector_item_offer"
+                        android:padding="4dip"
+                        android:background="@drawable/selector_terminal_param"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="12dp"
+                         android:button="@null"/>  
+                            
+                        </RadioGroup>
+                    </LinearLayout>
+
+                   <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/current_line_bg" />
+
+                    <LinearLayout    android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:gravity="center_vertical"
+                           android:background="#fff"
+                        android:paddingLeft="5dp">
+
+                      <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textColor="@color/red"
+                           android:layout_marginLeft="5dp"
+                            android:text="* " />
+                        
+                        <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           style="@style/black16_cu"
+                            android:text="时        间:" /> 
+                            
+                        <TextView
+                            android:id="@+id/tv_date"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textColor="#ff8c03"
+                           android:textSize="16sp"
+                           android:layout_marginLeft="6dp"
+                            android:typeface="sans"
+                           
+                            /> 
+                            
+                        <TextView
+                            android:id="@+id/tv_time"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                             android:textColor="#ff8c03"
+                             android:textSize="18sp"
+                           android:layout_marginLeft="5dp"
+                            android:typeface="sans"
+                            android:textStyle="bold"
+                            /> 
+                            
+                        </LinearLayout>
+
+                  <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/current_line_bg" />
+
+                    <LinearLayout    android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:gravity="center_vertical"
+                           android:background="#fff"
+                        android:paddingLeft="5dp" >
+
+                         <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textColor="@color/red"
+                           android:layout_marginLeft="5dp"
+                            android:text="* " />
+                        
+                        <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           style="@style/black16_cu"
+                            android:text="车辆类型: " />                   
+
+                        <RadioGroup
+                            android:id="@+id/rg_car_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+                            
+                            <RadioButton 
+                         android:id="@+id/rb_type_1"
+                        android:layout_width="0dp"
+                         android:layout_weight="1"
+                         android:layout_height="wrap_content"
+                         android:text="小车"
+                         android:typeface="sans"
+                         android:gravity="center"
+                         android:textColor="@color/selector_item_offer"
+                        android:padding="4dip"
+                        android:background="@drawable/selector_terminal_param"
+                        android:layout_marginLeft="5dp"
+                         android:button="@null"/>
+                            
+                               <RadioButton 
+                      android:id="@+id/rb_type_2"
+                        android:layout_width="0dp"
+                         android:layout_weight="1"
+                         android:layout_height="wrap_content"
+                         android:text="越野"
+                          android:typeface="sans"
+                         android:gravity="center"
+                         android:textColor="@color/selector_item_offer"
+                        android:padding="4dip"
+                        android:background="@drawable/selector_terminal_param"
+                        android:layout_marginLeft="4dp"
+                         android:button="@null"/>
+                            
+                                  <RadioButton 
+                          android:id="@+id/rb_type_3"
+                         android:layout_width="0dp"
+                         android:layout_weight="1"
+                         android:layout_height="wrap_content"
+                         android:text="商务"
+                          android:typeface="sans"
+                         android:gravity="center"
+                         android:textColor="@color/selector_item_offer"
+                        android:padding="4dip"
+                        android:background="@drawable/selector_terminal_param"
+                        android:layout_marginLeft="4dp"
+                         android:button="@null"/>
+                                  
+                                    <!-- <RadioButton 
+                          android:id="@+id/rb_type_4"
+                         android:layout_width="0dp"
+                         android:layout_weight="1"
+                         android:layout_height="wrap_content"
+                         android:text="客车"
+                          android:typeface="sans"
+                         android:gravity="center"
+                         android:textColor="@color/selector_item_offer"
+                        android:padding="4dip"
+                        android:background="@drawable/selector_terminal_param"
+                        android:layout_marginLeft="4dp"
+                         android:button="@null"/> -->
+                               
+                        <RadioButton 
+                          android:id="@+id/rb_type_5"
+                        android:layout_width="0dp"
+                         android:layout_weight="1.5"
+                         android:layout_height="wrap_content"
+                         android:text="其他"
+                          android:typeface="sans"
+                         android:gravity="center"
+                         android:textColor="@color/selector_item_offer"
+                        android:padding="4dip"
+                        android:background="@drawable/selector_terminal_param"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="5dp"
+                         android:button="@null"/>
+                                     
+                        </RadioGroup>
+                    </LinearLayout>
+
+                     <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/current_line_bg" />
+
+      
+
+                    <LinearLayout    android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:gravity="center_vertical"
+                           android:background="#fff"
+                        android:paddingLeft="5dp" >
+
+                         <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textColor="@color/red"
+                           android:layout_marginLeft="5dp"
+                            android:text="* " />
+                        
+                        <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           style="@style/black16_cu"
+                            android:text="人        数: " />                   
+
+                        <RadioGroup
+                            android:id="@+id/rg_count"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+                            
+                            <RadioButton 
+                                android:id="@+id/rb_count_1"
+                        android:layout_width="0dp"
+                         android:layout_weight="1"
+                         android:layout_height="wrap_content"
+                         android:text="1"
+                          android:typeface="sans"
+                         android:gravity="center"
+                         android:textColor="@color/selector_item_offer"
+                        android:padding="4dip"
+                        android:background="@drawable/selector_terminal_param"
+                        android:layout_marginLeft="5dp"
+                         android:button="@null"/>
+                            
+                               <RadioButton 
+                       android:id="@+id/rb_count_2"
+                        android:layout_width="0dp"
+                         android:layout_weight="1"
+                         android:layout_height="wrap_content"
+                         android:text="2"
+                          android:typeface="sans"
+                         android:gravity="center"
+                         android:textColor="@color/selector_item_offer"
+                        android:padding="4dip"
+                        android:background="@drawable/selector_terminal_param"
+                        android:layout_marginLeft="4dp"
+                         android:button="@null"/>
+                            
+                                  <RadioButton 
+                       android:id="@+id/rb_count_3"
+                       android:layout_width="0dp"
+                         android:layout_weight="1"
+                         android:layout_height="wrap_content"
+                         android:text="3"
+                          android:typeface="sans"
+                         android:gravity="center"
+                         android:textColor="@color/selector_item_offer"
+                        android:padding="4dip"
+                        android:background="@drawable/selector_terminal_param"
+                        android:layout_marginLeft="4dp"
+                         android:button="@null"/>
+                               
+                                     <RadioButton 
+                       android:id="@+id/rb_count_4"
+                        android:layout_width="0dp"
+                         android:layout_weight="1"
+                         android:layout_height="wrap_content"
+                         android:text="4"
+                          android:typeface="sans"
+                         android:gravity="center"
+                         android:textColor="@color/selector_item_offer"
+                        android:padding="4dip"
+                        android:background="@drawable/selector_terminal_param"
+                        android:layout_marginLeft="4dp"
+                         android:button="@null"/>
+                      
+                   
+                         <RadioButton 
+                        android:id="@+id/rb_count_5"
+                        android:layout_width="0dp"
+                         android:layout_weight="1"
+                         android:layout_height="wrap_content"
+                         android:text="更多"
+                          android:typeface="sans"
+                         android:gravity="center"
+                         android:textColor="@color/selector_item_offer"
+                        android:padding="4dip"
+                        android:background="@drawable/selector_terminal_param"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="5dp"
+                         android:button="@null"/> 
+                         <TextView
+                         android:id="@+id/et_count"
+                        android:layout_width="0dp"
+                         android:layout_weight="1"
+                         android:layout_height="wrap_content"
+                         android:gravity="center"
+                         android:textColor="#ff8c03"
+                        android:padding="2.8dip"
+                        android:background="@drawable/bg_check"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_gravity="center_vertical"
+                       android:lines="1"
+                        android:typeface="sans"
+                       android:inputType="number"
+                       android:maxEms="100"
+                      android:visibility="gone"
+                         /> 
+                      
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/current_line_bg" />
+                
+                    <LinearLayout    android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:gravity="center_vertical"
+                           android:background="#fff"
+                        android:paddingLeft="5dp">
+
+                      <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textColor="@color/red"
+                           android:layout_marginLeft="5dp"
+                            android:text="* " />
+                        
+                        <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           style="@style/black16_cu"
+                            android:text="上车地点: " />                   
+                         
+                        <TextView
+                          android:id="@+id/rb_plite_1"
+                         android:layout_width="0dp"
+                         android:layout_weight="1.7"
+                         android:layout_height="wrap_content"
+                         android:text="请输入上车地点"
+                         android:textColor="#b2b2b2"
+                         android:textSize="16sp"
+                         android:gravity="center_vertical"
+                         android:typeface="sans"
+                        android:padding="4dip"
+                        android:layout_marginLeft="4dp"
+                        android:background="@null"
+                        android:editable="false"
+                         android:lines="1"
+                       />
+                        <Button 
+                         android:id="@+id/rb_plite_moren"
+                        android:layout_width="0dp"
+                         android:layout_weight="1"
+                         android:layout_height="29dp"
+                         android:text="默认上次"
+                         android:gravity="center"
+                         android:typeface="sans"
+                        android:padding="5dip"
+                        android:textColor="#848484"
+                        android:background="@drawable/bg_check_on"
+                        android:layout_marginRight="12dp"
+                        />
+                        </LinearLayout>
+                        
+                    
+                    <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/current_line_bg" />
+                
+                    <LinearLayout    android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:gravity="center_vertical"
+                           android:background="#fff"
+                        android:paddingLeft="5dp">
+
+                      <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textColor="@color/red"
+                           android:layout_marginLeft="5dp"
+                           
+                            android:text="   "  />
+                        
+                        <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           style="@style/black16_cu"
+                            android:text="途径地点: " />                   
+                            
+                           <TextView 
+                          android:id="@+id/rb_mid_1"
+                         android:layout_width="0dp"
+                         android:layout_weight="1.7"
+                         android:layout_height="wrap_content"
+                         android:text="请输入途经地点"
+                         android:textColor="#b2b2b2"
+                         android:textSize="16sp"
+                         android:gravity="center_vertical"
+                         android:typeface="sans"
+                        android:padding="4dip"
+                        android:layout_marginLeft="4dp"
+                         android:editable="false"
+                         android:lines="1"
+                        android:background="@null"/>
+                           
+                            <Button 
+                         android:id="@+id/rb_mid_moren"
+                         android:layout_width="0dp"
+                         android:layout_weight="1"
+                         android:layout_height="29dp"
+                         android:text="默认上次"
+                        android:gravity="center"
+                         android:typeface="sans"
+                        android:padding="5dip"
+                        android:textColor="#848484"
+                        android:background="@drawable/bg_check_on"
+                        android:layout_marginRight="12dp"/>
+                         
+                        </LinearLayout>
+                        
+                    
+                    <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/current_line_bg" />
+                
+                    <LinearLayout    android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:gravity="center_vertical"
+                           android:background="#fff"
+                        android:paddingLeft="5dp">
+
+                      <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textColor="@color/red"
+                           android:layout_marginLeft="5dp"
+                            android:text="* " />
+                        
+                        <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           style="@style/black16_cu"
+                            android:text="目  的  地: " />                   
+                            
+                            
+                         <TextView 
+                          android:id="@+id/rb_return_1"
+                         android:layout_width="0dp"
+                         android:layout_weight="1.7"
+                         android:layout_height="wrap_content"
+                         android:text="请输入目的地"
+                        android:textColor="#b2b2b2"
+                         android:textSize="16sp"
+                         android:gravity="center_vertical"
+                         android:typeface="sans"
+                        android:padding="4dip"
+                        android:layout_marginLeft="4dp"
+                         android:editable="false"
+                         android:lines="1"
+                        android:background="@null"/>
+                          
+                            <Button 
+                                  android:id="@+id/rb_return_moren"
+                           android:layout_width="0dp"
+                         android:layout_weight="1"
+                         android:layout_height="29dp"
+                         android:text="默认上次"
+                         android:gravity="center"
+                         android:typeface="sans"
+                        android:padding="5dip"
+                        android:textColor="#848484"
+                        android:background="@drawable/bg_check_on"
+                        android:layout_marginRight="12dp"/>
+                         
+                        </LinearLayout>
+              
+                    
+                     <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/current_line_bg" />
+                
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dp"
+                        android:background="#fff"
+                         >
+                        
+                        <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textColor="@color/red"
+                           android:layout_marginLeft="5dp"
+                            android:text="   " />
+                        
+                        <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           style="@style/black16_cu"
+                            android:text="用车事由: " />
+
+                        <RadioGroup
+                            android:id="@+id/rg_resean"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+                            
+                      <RadioButton 
+                          android:id="@+id/rb_resean_1"
+                         android:layout_width="0dp"
+                         android:layout_weight="1"
+                         android:layout_height="wrap_content"
+                         android:text="出差"
+                         android:gravity="center"
+                          android:typeface="sans"
+                         android:textColor="@color/selector_item_offer"
+                        android:padding="4dip"
+                        android:background="@drawable/selector_terminal_param"
+                        android:layout_marginLeft="5dp"
+                         android:button="@null"/>
+                      
+                         <RadioButton 
+                             android:id="@+id/rb_resean_2"
+                      android:layout_width="0dp"
+                         android:layout_weight="1"
+                         android:layout_height="wrap_content"
+                         android:text="接人"
+                         android:gravity="center"
+                          android:typeface="sans"
+                         android:textColor="@color/selector_item_offer"
+                        android:padding="4dip"
+                        android:background="@drawable/selector_terminal_param"
+                        android:layout_marginLeft="10dp"
+                         android:button="@null"/>
+                         
+                           <RadioButton 
+                               android:id="@+id/rb_resean_3"
+                        android:layout_width="0dp"
+                         android:layout_weight="1"
+                         android:layout_height="wrap_content"
+                         android:text="会议"
+                         android:gravity="center"
+                          android:typeface="sans"
+                         android:textColor="@color/selector_item_offer"
+                        android:padding="4dip"
+                        android:background="@drawable/selector_terminal_param"
+                        android:layout_marginLeft="10dp"
+                         android:button="@null"/>
+                           
+                     <RadioButton 
+                         android:id="@+id/rb_resean_4"
+                         android:layout_width="0dp"
+                         android:layout_weight="1"
+                         android:layout_height="wrap_content"
+                         android:text="其他"
+                          android:typeface="sans"
+                         android:gravity="center"
+                         android:textColor="@color/selector_item_offer"
+                        android:padding="4dip"
+                        android:background="@drawable/selector_terminal_param"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="12dp"
+                         android:button="@null"/>  
+                            
+                        </RadioGroup>
+                    </LinearLayout>
+                    
+                     
+                     <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/current_line_bg" />
+                
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dp"
+                        android:background="#fff"
+                         >
+                        
+                        <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textColor="@color/red"
+                           android:layout_marginLeft="5dp"
+                            android:text="* " />
+                        
+                        <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           style="@style/black16_cu"
+                            android:text="出车类型: " />
+
+                        <RadioGroup
+                            android:id="@+id/rg_way"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+                            
+                      <RadioButton 
+                          android:id="@+id/rb_way_1"
+                         android:layout_width="0dp"
+                         android:layout_weight="1"
+                         android:layout_height="wrap_content"
+                         android:text="单程"
+                         android:gravity="center"
+                          android:typeface="sans"
+                         android:textColor="@color/selector_item_offer"
+                        android:padding="4dip"
+                        android:background="@drawable/selector_terminal_param"
+                        android:layout_marginLeft="5dp"
+                         android:button="@null"/>
+                      
+                         <RadioButton 
+                             android:id="@+id/rb_way_2"
+                      android:layout_width="0dp"
+                         android:layout_weight="1"
+                         android:layout_height="wrap_content"
+                         android:text="往返"
+                         android:gravity="center"
+                         android:textColor="@color/selector_item_offer"
+                        android:padding="4dip"
+                         android:typeface="sans"
+                        android:background="@drawable/selector_terminal_param"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="80dp"
+                         android:button="@null"/>
+                            
+                        </RadioGroup>
+                    </LinearLayout>
+
+                   <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/current_line_bg" />
+                   <LinearLayout    android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:gravity="center_vertical"
+                           android:background="#fff"
+                        android:paddingLeft="5dp">
+
+                      <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textColor="@color/red"
+                           android:layout_marginLeft="5dp"
+                            android:text="   " />
+                        
+                        <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           style="@style/black16_cu"
+                            android:text="备        注: " />        
+                            
+                        <EditText
+                android:id="@+id/et_comment"
+               android:textSize="16sp"
+                android:typeface="sans"
+                android:textColor="#ff8c03"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="可不填"
+                android:textColorHint="#b2b2b2"
+                android:imeOptions="actionSearch"
+                android:lines="1"
+                android:paddingLeft="5dp"
+                android:layout_marginRight="12dp"
+                android:singleLine="true" />
+                            
+                        </LinearLayout>
+                        
+         <Button
+            android:id="@+id/btn_apply_submit"
+            style="@style/white18"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/onclick_commit_btn"
+            android:text=" 提交申请" />
+                   
+            </LinearLayout>
+            
+            
+        </ScrollView>
+   
+</RelativeLayout>
